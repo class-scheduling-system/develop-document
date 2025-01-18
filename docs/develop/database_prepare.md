@@ -57,7 +57,7 @@
 
     **说明**：`IPAddress` 是 MySQL 容器的内部网络地址，后续将用于连接数据库。
 
-    ![](/assets/images/develop-database-mysql.png)
+    ![](../assets/images/develop-database-mysql.png)
 
 ### 配置 PHPMyAdmin 登录
 
@@ -66,11 +66,11 @@
     - 用户名：`root`
     - 密码：您在 Docker 部署 MySQL 时设置的 `<YourPassword>`
 
-    ![](/assets/images/develop-database-phpmyadmin-login-page.png)
+    ![](../assets/images/develop-database-phpmyadmin-login-page.png)
 
 3. 登录成功后，点击 `账户` 菜单，选择 `新增用户账户` 以创建新用户。
 
-    ![](/assets/images/develop-database-phpmyadmin-create-before.png)
+    ![](../assets/images/develop-database-phpmyadmin-create-before.png)
 
 4. 配置用户信息：
     - 用户名：自定义用户名，例如 `class_scheduling_system`。
@@ -79,7 +79,7 @@
 
     完成配置后点击 `执行` 按钮。
 
-    ![](/assets/images/develop-database-phpmyadmin-create.png)
+    ![](../assets/images/develop-database-phpmyadmin-create.png)
 
 ## 数据库 CLI 工具
 
@@ -112,7 +112,7 @@
 
     **注意**：若操作步骤与上述示例一致，默认配置通常无需修改。
 
-    ![](/assets/images/develop-database-cli-config.png)
+    ![](../assets/images/develop-database-cli-config.png)
 
 ### 测试连接
 

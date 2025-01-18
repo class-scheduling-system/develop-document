@@ -1,0 +1,54 @@
+@startuml architecture
+
+' 定义用户（actor）
+actor "用户" as User
+
+' 定义前端模块
+package "前端模块" {
+    class React
+    class TailwindCSS
+    class Redux
+    class Axios
+}
+
+' 定义后端模块
+package "后端模块" {
+    class SpringBoot
+    class SpringSecurity
+    class JWT
+    class MybatisPlus
+    class Redis
+    class SmartScheduling
+    class CourseDataManagement
+    class ConflictDetection
+    class DataStatistics
+}
+
+' 定义数据库
+package "数据库" {
+    class MySQL
+    class RedisCache
+}
+
+' 前端与后端的交互
+User --> React : 使用前端应用
+React --> Axios : 发送请求
+Axios --> SpringBoot : 调用后端API
+
+' 后端模块之间的交互
+SpringBoot --> SpringSecurity : 身份认证
+SpringBoot --> MybatisPlus : 数据持久化
+SpringBoot --> SmartScheduling : 排课逻辑
+SpringBoot --> ConflictDetection : 冲突检测
+SpringBoot --> DataStatistics : 数据统计
+SpringBoot --> Redis : 缓存管理
+
+' 数据库交互
+MySQL --> MybatisPlus : 存储课程数据
+RedisCache --> Redis : 缓存管理
+
+' 安全与认证
+SpringBoot --> JWT : 生成和验证令牌
+SpringSecurity --> JWT : 用户认证
+
+@enduml

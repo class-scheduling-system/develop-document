@@ -4,8 +4,8 @@ repo_url: https://github.com/class-scheduling-system/develop-document
 repo_name: bamboo-services/develop-document
 copyright: Copyright &copy; 2022-2025 锋叶技术团队 All Righjs Reserved. 版权所有
 theme:
-  logo: /assets/images/favicon.png
-  favicon: /assets/images/favicon.png
+  logo: ../assets/images/favicon.png
+  favicon: ../assets/images/favicon.png
   name: material
   language: zh
   palette:
@@ -42,12 +42,15 @@ nav:
   - 欢迎: index.md
   - 开发信息: information.md
   - 赛题信息: competition.md
+  - 需求说明书: requirements_specification.md
   - 设计:
-    - 数据库设计: design/database_design.md
+    - 数据库设计: design/database.md
+    - 技术架构设计: design/technical_architecture.md
   - 开发:
     - 数据库准备: develop/database_prepare.md
     - 项目准备: develop/project_prepare.md
 plugins:
   - search
+  - mermaid2
 extra_javascript:
   - assets/js/extra.js
