@@ -12,3 +12,8 @@
 
 ## 项目开发信息
 
+1. [数据库 CLI 项目](https://github.com/class-scheduling-system/table-install-cli)
+2. [数据库设计项目](https://github.com/class-scheduling-system/database-design)
+3. [后端项目](https://github.com/class-scheduling-system/class-scheduling)
+4. [前端项目](https://github.com/class-scheduling-system/class-scheduling-web)
+5. [开发文档项目](https://github.com/class-scheduling-system/develop-document)

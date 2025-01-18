@@ -44,6 +44,9 @@ nav:
   - 赛题信息: competition.md
   - 设计:
     - 数据库设计: design/database_design.md
+  - 开发:
+    - 数据库准备: develop/database_prepare.md
+    - 项目准备: develop/project_prepare.md
 plugins:
   - search
 extra_javascript:

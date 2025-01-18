@@ -52,10 +52,10 @@
 
 ### 技术栈
 
-- **前端**：React、Ant Design、AntV React Charts、TailwindCss
+- **前端**：React、Fluent、AntV React Charts、TailwindCss
 - **后端**：Spring Boot、Go/Java（涵盖AI算法）
 - **数据库**：MySQL、Redis
-- **部署平台**：Linux（主要）、Windows（测试）
+- **部署平台**：Linux（主要）、Windows/MacOS（测试）
 
 
 

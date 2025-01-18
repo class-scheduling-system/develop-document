@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll('a[href^="http"]');
-    const excludedHosts = ["127.0.0.1", "localhost", "class-scheduling.doc.api-fy.cn"];
+    const excludedHosts = ["127.0.0.1", "localhost", "class-scheduling.doc.api-fy.cn", "class-scheduling-system.pages.dev"];
 
     links.forEach(link => {
         try {
