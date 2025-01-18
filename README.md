@@ -8,7 +8,8 @@
 
 ## 开发者
 
-- 筱锋 @XiaoLFeng
-- FLASHLACK @FLASHLACK1314
-- GUjiYN @GUjiYN
-- 柒屿 @qiyu-yzh
+- 筱锋 (@XiaoLFeng)
+- GUjiYN (@GUjiYN)
+- FLASHLACK (@FLASHLACK1314)
+- fanfan187 (@fanfan187)
+- 柒屿 (@qiyu-yzh)
