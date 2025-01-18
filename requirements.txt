@@ -29,3 +29,4 @@ six==1.16.0
 urllib3==2.2.1
 watchdog==4.0.0
 wheel==0.43.0
+mkdocs-mermaid2-plugin==1.2.1
