@@ -1,6 +1,6 @@
 # 智课方舟
 
-> 基于AI的大学智慧排课系统「2025-01-18」
+> 基于AI的大学智慧排课系统「2025-01-23」
 
 
 
@@ -52,8 +52,8 @@
 
 ### 技术栈
 
-- **前端**：React、Fluent、AntV React Charts、TailwindCss
-- **后端**：Spring Boot、Go/Java（涵盖AI算法）
+- **前端**：React、Fluent、AntV React Charts、TailwindCss 等
+- **后端**：Spring Boot、Go/Java（涵盖AI算法） 
 - **数据库**：MySQL、Redis
 - **部署平台**：Linux（主要）、Windows/MacOS（测试）
 
