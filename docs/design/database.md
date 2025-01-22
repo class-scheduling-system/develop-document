@@ -8,6 +8,8 @@
 
 ## 数据库结构图
 
+[可点击查看原图](../assets/images/draw.png)
+
 ![](../assets/images/draw.png)
 
 ## 数据库加载顺序
