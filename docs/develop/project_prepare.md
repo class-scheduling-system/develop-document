@@ -9,6 +9,7 @@
 - **[Spring Boot](https://springdoc.cn/spring-boot/)**：作为后端开发的主要框架，提供高效的 RESTful API 标准化支持，简化了配置与开发流程。
 - **[Spring Security](https://springdoc.cn/spring-security/)**：用于身份认证与权限管理，通过与 AOP 的结合实现精细化的权限控制。
 - **[MyBatis](https://mybatis.org/mybatis-3/zh_CN/getting-started.html)**：负责数据持久化操作，并结合 **[MyBatis Plus](https://baomidou.com/introduce/)** 简化开发，提升操作效率。
+- **[Hutool](https://hutool.cn/)**：Hutool是一个小而全的Java工具类库，通过静态方法封装，降低相关API的学习成本，提高工作效率。
 
 #### 通信协议
 
