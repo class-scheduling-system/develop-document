@@ -52,7 +52,8 @@ nav:
       - 自动排课设计: design/auto_scheduling.md
       - AI 建议设计: design/ai_suggestion.md
   - 开发:
-    - 关系型数据库准备: develop/database_prepare.md
+    - 关系型数据库准备: develop/sql_prepare.md
+    - 非关系型数据库准备: develop/nosql_prepare.md
     - 项目准备: develop/project_prepare.md
 plugins:
   - search
