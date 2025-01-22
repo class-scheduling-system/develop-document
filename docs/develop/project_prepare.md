@@ -38,6 +38,7 @@
 
 - **[Axios](https://www.axios-http.cn/docs/intro)**：用于 HTTP 请求的处理，支持更高效的 API 调用。
 - **[FullCalendar](https://fullcalendar.io/docs)**：提供直观的日历视图，增强课程排布的可视化效果。
+- **[Apache ECharts](https://echarts.apache.org/zh/index.html)**：一个基于 JavaScript 的开源可视化图表库。
 
 ---
 
@@ -76,6 +77,8 @@
 
 ### 测试环境
 
+#### 传统测试环境
+
 - **部署服务器**：实验室服务器（Proxmox VE 虚拟化环境）
 - **操作系统**：Linux CentOS Stream 9（LXC 容器）
 - **硬件配置**：
@@ -88,6 +91,21 @@
     - 模拟跨域场景，不使用 Nginx 代理。
     - 前端运行在 80 端口，后端运行在 8888 端口。
     - 内外网一致使用内网 IP 地址，通过 VPN 进行访问。
+
+#### Dify 测试环境
+
+- **平台**：Dify
+- **部署模型**：
+    - 基于 LLM 模型（如 GPT-4、LLama）提供优化建议。
+    - 多模型协同，适配不同任务场景（如冲突检测、优化方案生成）。
+- **功能支持**：
+    - 知识库训练与更新：将排课规则动态嵌入知识库。
+    - 流程编辑：通过 Dify 的流程编辑器实现模型任务的分配与结果聚合。
+    - API 集成：提供开放 API 接口，供排课系统调用。
+- **特殊配置**：
+    - 数据脱敏：在模型调用前对用户数据进行隐私保护。
+    - 模拟用户交互：支持自然语言输入和多轮次优化建议生成。
+- **测试域名**：`http://172.16.1.6`
 
 ---
 
@@ -112,3 +130,4 @@
 - [React 官方文档](https://react.dev/)
 - [MyBatis 官方文档](https://mybatis.org/mybatis-3/zh_CN/)
 - [Redis 官方文档](https://redis.io/documentation)
+- [Dify 官方文档](https://docs.dify.ai/)
