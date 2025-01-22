@@ -44,10 +44,13 @@ nav:
   - 赛题信息: competition.md
   - 需求说明书: requirements_specification.md
   - 设计:
-    - 数据库设计: design/database.md
-    - 技术架构设计: design/technical_architecture.md
-    - 自动排课设计: design/auto_scheduling.md
-    - AI 建议设计: design/ai_suggestion.md
+    - 概要设计:
+      - 数据库设计: design/database.md
+      - 技术架构设计: design/technical_architecture.md
+    - 详细设计:
+      - 授权模块设计: design/authorization.md
+      - 自动排课设计: design/auto_scheduling.md
+      - AI 建议设计: design/ai_suggestion.md
   - 开发:
     - 关系型数据库准备: develop/database_prepare.md
     - 项目准备: develop/project_prepare.md
