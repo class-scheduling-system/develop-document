@@ -73,7 +73,7 @@
     ![](../assets/images/develop-database-phpmyadmin-create-before.png)
 
 4. 配置用户信息：
-    - 用户名：自定义用户名，例如 `class_scheduling_system`。
+    - 用户名：自定义用户名，例如 `class-scheduling-system`。
     - 密码：自定义密码，例如 `123456`。
     - 勾选选项：创建与用户同名的数据库并授予所有权限。
 
