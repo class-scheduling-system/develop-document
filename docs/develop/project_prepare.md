@@ -32,7 +32,7 @@
 
 #### UI 框架
 
-- **[Fluent](https://react.fluentui.dev/?path=/docs/concepts-introduction--docs)**：用于快速实现一致的 UI 布局。
+- **[DaisyUI](https://daisyui.com/docs/install/)**：用于快速实现一致的 UI 布局。
 - **[Tailwind CSS](https://tailwindcss.com/docs/configuration)**：实现响应式设计和定制化样式。
 
 #### 数据请求与通信
