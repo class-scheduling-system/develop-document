@@ -10,6 +10,7 @@
 - **[Spring Security](https://springdoc.cn/spring-security/)**：用于身份认证与权限管理，通过与 AOP 的结合实现精细化的权限控制。
 - **[MyBatis](https://mybatis.org/mybatis-3/zh_CN/getting-started.html)**：负责数据持久化操作，并结合 **[MyBatis Plus](https://baomidou.com/introduce/)** 简化开发，提升操作效率。
 - **[Hutool](https://hutool.cn/)**：Hutool是一个小而全的Java工具类库，通过静态方法封装，降低相关API的学习成本，提高工作效率。
+- **[Lettuce](https://redisson.org/docs/getting-started/)**：Redis 包装工具库，用于操作 Redis
 
 #### 通信协议
 
