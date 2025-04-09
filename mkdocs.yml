@@ -58,6 +58,8 @@ nav:
     - 关系型数据库准备: develop/sql_prepare.md
     - 非关系型数据库准备: develop/nosql_prepare.md
     - 项目准备: develop/project_prepare.md
+  - 项目总结:
+    - 项目概要介绍: final/ProjectOverview.md
 plugins:
   - search
   - mermaid2
