@@ -8,27 +8,27 @@
 
 ### 1.2 算法简要逻辑
 
-​1.数据输入阶段
+1. 数据输入阶段
 	- 前端提交排课约束条件（课程、教师、教室、时间等）
 	- 后端接收并预处理数据，生成排课问题域
-​2.种群初始化
+2. 种群初始化
 	- 随机生成初始种群（多个候选课表）
 	- 每个个体表示一种排课方案（教室、教师、时间槽的合法组合）
-​3.适应度评估
+3. 适应度评估
 	- 对每个个体进行约束检测和评分
 	- 计算冲突数（如教师时间冲突、教室占用冲突等）
 	- 根据冲突情况计算适应度值（冲突越少，适应度越高）
-​4.迭代优化阶段
-	- ​选择（Selection）​
+4. 迭代优化阶段
+   - 选择（Selection）​
 		- 采用轮盘赌选择法，优先保留高适应度个体
 		- 适应度越高的个体被选中的概率越大
-	- ​交叉（Crossover）​
+   - 交叉（Crossover）​
 		- 从父代中选择两个个体，交换部分课程安排
 		- 生成新的子代个体，保留优质基因
-	- ​变异（Mutation）​
+   - 变异（Mutation）​
 		- 随机调整部分课程的时间或教室分配
 		- 引入多样性，避免早熟收敛
-​5.结果输出阶段
+5. 结果输出阶段
 	- 记录迭代过程中的最优解
 	- 最终输出冲突最少的排课方案（适应度最高的）
 	- 保存无法避免的冲突
@@ -109,31 +109,31 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[初始化种群] --> B[适应度评估]
-    B --> C{满足终止条件?}
-    C -->|否| D[选择操作]
-    D --> E[交叉操作]
-    E --> F[变异操作]
-    F --> B
-    C -->|是| G[获取最优解]
-    G --> H[冲突检测]
-    H --> I[保存排课数据]
-    H --> J[保存冲突数据]
-
-    %% 样式定义
-    style A fill:#2196F3,stroke:#1976D2,color:white
-    style B fill:#2196F3,stroke:#1976D2,color:white
-    style D fill:#4CAF50,stroke:#388E3C,color:white
-    style E fill:#FF9800,stroke:#F57C00,color:white
-    style F fill:#9C27B0,stroke:#7B1FA2,color:white
-    style G fill:#607D8B,stroke:#455A64,color:white
-    style H fill:#607D8B,stroke:#455A64,color:white
-    style I fill:#4CAF50,stroke:#388E3C,color:white
-    style J fill:#FF9800,stroke:#F57C00,color:white
-    %% 决策节点样式
-    style C fill:#FFF8E1,stroke:#FFC107,color:#333,font-weight:bold
-    %% 全局设置
-    classDef default font-size:12px
+    A[初始化种群] --> B[适应度评估]
+    B --> C{满足终止条件?}
+    C -->|否| D[选择操作]
+    D --> E[交叉操作]
+    E --> F[变异操作]
+    F --> B
+    C -->|是| G[获取最优解]
+    G --> H[冲突检测]
+    H --> I[保存排课数据]
+    H --> J[保存冲突数据]
+    
+    %% 样式定义
+    style A fill:#2196F3,stroke:#1976D2,color:white
+    style B fill:#2196F3,stroke:#1976D2,color:white
+    style D fill:#4CAF50,stroke:#388E3C,color:white
+    style E fill:#FF9800,stroke:#F57C00,color:white
+    style F fill:#9C27B0,stroke:#7B1FA2,color:white
+    style G fill:#607D8B,stroke:#455A64,color:white
+    style H fill:#607D8B,stroke:#455A64,color:white
+    style I fill:#4CAF50,stroke:#388E3C,color:white
+    style J fill:#FF9800,stroke:#F57C00,color:white
+    %% 决策节点样式
+    style C fill:#FFF8E1,stroke:#FFC107,color:#333,font-weight:bold
+    %% 全局设置
+    classDef default font-size:12px
 ```
 
 ## 4. 关键算法实现
@@ -154,9 +154,9 @@ flowchart TD
 
 #### 4.2.1 冲突检测：
 
-1. ​教师冲突检测​：检查同一教师在同一时间是否被分配多个课程，每发现一处冲突给予100分惩罚
-​2. 教室冲突检测​：检查同一教室在同一时间是否被分配多个课程，每发现一处冲突给予100分惩罚
-​3. 班级冲突检测​：检查同一班级在同一时间是否被分配多个课程，每发现一处冲突给予100分惩罚
+1. 教师冲突检测​：检查同一教师在同一时间是否被分配多个课程，每发现一处冲突给予100分惩罚
+2. 教室冲突检测​：检查同一教室在同一时间是否被分配多个课程，每发现一处冲突给予100分惩罚
+3. 班级冲突检测​：检查同一班级在同一时间是否被分配多个课程，每发现一处冲突给予100分惩罚
 
 #### 4.2.2 时间偏好评估
 
@@ -167,8 +167,8 @@ flowchart TD
 
 #### 4.2.3 连续课程优化
 
-1. ​连续课程奖励​：对同一班级连续安排2节以上相同课程时，每组连续课程给予(课程数-1)5分的奖励
-2. ​合理间隔检查​：理论课与实践课之间至少间隔1天，不符合要求每处 -5 分
+1. 连续课程奖励​：对同一班级连续安排2节以上相同课程时，每组连续课程给予(课程数-1)5分的奖励
+2. 合理间隔检查​：理论课与实践课之间至少间隔1天，不符合要求每处 -5 分
 3. 
 #### 4.2.4 教室资源优化
 
