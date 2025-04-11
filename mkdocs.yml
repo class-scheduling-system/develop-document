@@ -60,6 +60,7 @@ nav:
     - 项目准备: develop/project_prepare.md
   - 项目总结:
     - 项目概要介绍: final/ProjectOverview.md
+    - 算法文档: final/algorithm.md
 plugins:
   - search
   - mermaid2
