@@ -67,3 +67,4 @@ plugins:
   - mermaid2
 extra_javascript:
   - assets/js/extra.js
+  - assets/js/katex.js
