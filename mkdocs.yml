@@ -65,6 +65,9 @@ nav:
 plugins:
   - search
   - mermaid2
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
 extra_javascript:
   - assets/js/extra.js
   - assets/js/katex.js

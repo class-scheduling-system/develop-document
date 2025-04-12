@@ -261,10 +261,13 @@
   ### 6.1 初始化种群
 
   设种群规模为 N，每个个体表示一个排课方案，用染色体 Xi​ 表示：
+
   $$
   P^{(0)} = \{ \mathbf{X}_1^{(0)}, \mathbf{X}_2^{(0)}, \dots, \mathbf{X}_N^{(0)} \}
   $$
+
   其中：
+
   - $\mathbf{X}_i^{(0)}$：第 $i$ 个初始个体，表示一个完整课表方案
   - $P^{(0)}$：初始种群集合
 
@@ -275,6 +278,7 @@
   $$
 
   其中：
+
   - $\mathbf{X}_i^{(t)}$：第 $t$ 代第 $i$ 个个体（染色体）
   - $f_i^{(t)}$：对应的适应度函数值
   - $\text{Fitness}(\cdot)$：适应度评估函数
@@ -288,14 +292,17 @@
   $$
 
   其中：
+
   - $f_i^{(t)}$：第 $i$ 个个体的适应度值
   - $N$：种群规模
   - 分母为当代所有个体适应度之和
+  - 
   选出的交配池表示为：
 
   $$
   M^{(t)} = \{ \mathbf{X}_{s_1}^{(t)}, \mathbf{X}_{s_2}^{(t)}, \dots, \mathbf{X}_{s_K}^{(t)} \}
   $$
+
   其中 $s_1, \dots, s_K$ 是通过轮盘赌选出的个体索引（允许重复选择）
 
   ### 6.4交叉操作数学表示
@@ -307,6 +314,7 @@
   $$
 
   其中：
+
   - 交叉概率 $p_c \in (0,1]$ 控制操作执行频率
   - 交叉策略可采用：
     - ​**单点交叉**​：随机选择切点 $k$，交换切点后基因段
@@ -325,7 +333,9 @@
   $$
   \mathbf{X}_k^{(t+1)} \xrightarrow{\text{mutation}} \mathbf{X}_k^{\prime(t+1)}
   $$
+
   其中：
+
   - 变异概率 $p_m \in [0,1)$ 控制变异强度
   - 常用变异策略：
     - ​**时间微调**​：随机调整课程时间槽 $\tau \sim \mathcal{U}\{1, T\}$
@@ -338,7 +348,9 @@
   $$
   P^{(t+1)} = \text{SelectBest}\left(P^{(t)} \cup \text{Offspring}^{(t+1)}\right)
   $$
+  
   其中：
+
   - $\text{Offspring}^{(t+1)}$ 表示通过交叉和变异产生的新个体集合
   - $\text{SelectBest}(\cdot)$ 为选择函数，通常保留：
     - 前代最优个体（精英保留）
@@ -349,18 +361,19 @@
   $$
   \text{Terminate if: } t \geq T_{\text{max}} \text{ or } f^* \geq f_{\text{threshold}}
   $$
+
   其中：
+
   - $T_{\text{max}}$：最大迭代次数（如 500 代）
   - $f^* = \max \{ f(\mathbf{X}) | \mathbf{X} \in P^{(t)} \}$：当前种群最优适应度
   - $f_{\text{threshold}}$：预设目标适应度阈值（如 950 分）
 
   ### 6.8 遗传算法流程
 
-  1. ​**初始化**​：
+1. ​**初始化**​：
     - 生成初始种群 $P^{(0)} = \{ \mathbf{X}_1^{(0)}, \dots, \mathbf{X}_N^{(0)} \}$
     - 设置参数：$p_c$, $p_m$, $T_{\text{max}}$, $f_{\text{threshold}}$
-
-  2. ​**迭代优化**​（$t = 0$ to $T_{\text{max}}$）：
+2. ​**迭代优化**​（$t = 0$ to $T_{\text{max}}$）：
     - ​**适应度评估**​：
       $$ f_i^{(t)} = \text{Fitness}(\mathbf{X}_i^{(t)}), \quad \forall \mathbf{X}_i \in P^{(t)} $$
     - ​**选择**​：
@@ -372,12 +385,14 @@
     - ​**新一代种群**​：
       $$ P^{(t+1)} = \text{NextGeneration}(P^{(t)}, \text{Offspring}^{(t+1)}) $$
 
-  3. ​**终止条件**​（满足任一即停止）：
+3. ​**终止条件**​（满足任一即停止）：
     - $t \geq T_{\text{max}}$
     - $f^* \geq f_{\text{threshold}}$
 
-  1. ​**输出**​：
-    $$ \mathbf{X}^* = \underset{\mathbf{X} \in P^{(t)}}{\text{argmax}} f(\mathbf{X}) $$
+4. ​**输出**​：
+    $$ 
+    \mathbf{X}^* = \underset{\mathbf{X} \in P^{(t)}}{\text{argmax}} f(\mathbf{X}) 
+    $$
     
   ## 7.算法输出结果  
 
