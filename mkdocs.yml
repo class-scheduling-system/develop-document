@@ -59,10 +59,12 @@ nav:
     - 非关系型数据库准备: develop/nosql_prepare.md
     - 项目准备: develop/project_prepare.md
   - 项目总结:
-    - 项目概要介绍: final/project_overview.md
+    - 概要文档: final/project_overview.md
     - 算法文档: final/algorithm.md
+    - 详细文档: final/project_detailed.md
 plugins:
   - search
   - mermaid2
 extra_javascript:
   - assets/js/extra.js
+  - assets/js/katex.js
