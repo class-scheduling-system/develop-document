@@ -842,7 +842,7 @@
 系统开发环境配置如下：
 
 **开发工具**：
-- 采用IntelliJ IDEA和Visual Studio Code作为前后端开发IDE，配合GitLab进行版本控制，使用Postman测试API，通过Navicat管理数据库。
+- 采用IntelliJ IDEA和Webstrom作为前后端开发IDE，配合Apifox测试API，通过Navicat管理数据库。
 
 **运行环境**：
 - 服务器端采用CentOS系统和JDK 17运行环境，前端基于Node.js 18，数据库选用MySQL 8.0和Redis 7.0，使用Nginx作为Web服务器，内置Tomcat作为应用服务器。
