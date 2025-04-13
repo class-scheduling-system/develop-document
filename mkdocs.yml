@@ -62,6 +62,7 @@ nav:
     - 概要文档: final/project_overview.md
     - 算法文档: final/algorithm.md
     - 详细文档: final/project_detailed.md
+    - 视频文稿: final/manuscript.md
 plugins:
   - search
   - mermaid2

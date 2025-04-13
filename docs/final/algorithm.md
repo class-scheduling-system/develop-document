@@ -114,10 +114,13 @@ flowchart TD
 flowchart TD
     A[初始化种群] --> B[适应度评估]
     B --> C{满足终止条件?}
-    C -->|否| D[选择操作]
-    D --> E[交叉操作]
-    E --> F[变异操作]
-    F --> B
+    C -->|否| D1[轮盘赌选择]
+    D1 --> D2[精英保留]
+    D2 --> E1[单点交叉]
+    E1 --> E2[优化交叉]
+    E2 --> F1[时间槽变异]
+    F1 --> F2[教室资源变异]
+    F2 --> B
     C -->|是| G[获取最优解]
     G --> H[冲突检测]
     H --> I[保存排课数据]
@@ -126,9 +129,12 @@ flowchart TD
     %% 样式定义
     style A fill:#2196F3,stroke:#1976D2,color:white
     style B fill:#2196F3,stroke:#1976D2,color:white
-    style D fill:#4CAF50,stroke:#388E3C,color:white
-    style E fill:#FF9800,stroke:#F57C00,color:white
-    style F fill:#9C27B0,stroke:#7B1FA2,color:white
+    style D1 fill:#4CAF50,stroke:#388E3C,color:white
+    style D2 fill:#4CAF50,stroke:#388E3C,color:white,font-style:italic
+    style E1 fill:#FF9800,stroke:#F57C00,color:white
+    style E2 fill:#FF9800,stroke:#F57C00,color:white,font-style:italic
+    style F1 fill:#9C27B0,stroke:#7B1FA2,color:white
+    style F2 fill:#9C27B0,stroke:#7B1FA2,color:white,font-style:italic
     style G fill:#607D8B,stroke:#455A64,color:white
     style H fill:#607D8B,stroke:#455A64,color:white
     style I fill:#4CAF50,stroke:#388E3C,color:white
@@ -430,7 +436,7 @@ $$
 
 ### 9.2 算法核心思路
 
-遗传算法将每一个课程表视为一个“染色体”，通过初始化、适应度评估、选择、交叉和变异等步骤进行进化，逐步逼近最优解。其核心流程包括：
+遗传算法将每一个课程表视为一个"染色体"，通过初始化、适应度评估、选择、交叉和变异等步骤进行进化，逐步逼近最优解。其核心流程包括：
 
 1. **种群初始化**：根据课程、教师、班级、教室等信息，随机生成一组初始可行排课方案。
 2. **适应度评估**：通过冲突检测、时间偏好、连续性、教室匹配等规则，打分每个方案的排课质量。
