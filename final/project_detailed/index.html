@@ -1,0 +1,6867 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://bamboo-bookkeeping.doc.x-lf.cn/final/project_detailed/">
+      
+      
+        <link rel="prev" href="../algorithm/">
+      
+      
+        <link rel="next" href="../manuscript/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>详细文档 - 智课方舟</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="智课方舟" class="md-header__button md-logo" aria-label="智课方舟" data-md-component="logo">
+      
+  <img src="../../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            智课方舟
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              详细文档
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换亮色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换亮色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="切换暗色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换暗色模式" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="依照系统进行模式切换"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="依照系统进行模式切换" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/class-scheduling-system/develop-document" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bamboo-services/develop-document
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="智课方舟" class="md-nav__button md-logo" aria-label="智课方舟" data-md-component="logo">
+      
+  <img src="../../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    智课方舟
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/class-scheduling-system/develop-document" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bamboo-services/develop-document
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    欢迎
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../information/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    开发信息
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../competition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    赛题信息
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requirements_specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    需求说明书
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    设计
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            设计
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    概要设计
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            概要设计
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/database/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数据库设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/technical_architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    技术架构设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    详细设计
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            详细设计
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/authorization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    授权模块设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/auto_scheduling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自动排课设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/ai_suggestion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI 建议设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/teacher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    教师设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/student/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    学生设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/user_register/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    教师（学生）与用户关系设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    开发
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            开发
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../develop/sql_prepare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关系型数据库准备
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../develop/nosql_prepare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    非关系型数据库准备
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../develop/project_prepare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    项目准备
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    项目总结
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            项目总结
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概要文档
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../algorithm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    算法文档
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    详细文档
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    详细文档
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 项目概述
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 项目概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 项目背景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 项目目标
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 项目价值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 项目范围
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、可行性分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、可行性分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 经济可行性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 技术可行性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 社会可行性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-swot" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 SWOT分析
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 系统架构设计
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 系统架构设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 总体架构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 技术选型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 系统架构图
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 数据库设计
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 数据库设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.1 数据库表概览
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.2 数据表详细设计
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4.2 数据表详细设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cs_department" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 院系表（cs_department）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cs_major" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 专业表（cs_major）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-cs_grade" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 年级表（cs_grade）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cs_administrative_class" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 行政班级表（cs_administrative_class）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-cs_teacher" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 教师表（cs_teacher）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-cs_student" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 学生表（cs_student）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-cs_campus" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 校区表（cs_campus）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-cs_building" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 楼栋表（cs_building）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-cs_classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. 教室表（cs_classroom）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-cs_user" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. 用户表（cs_user）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-cs_course_library" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. 课程库表（cs_course_library）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-cs_semester" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. 学期表（cs_semester）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-cs_teaching_class" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. 教学班表（cs_teaching_class）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-cs_class_assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. 排课表（cs_class_assignment）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-cs_teacher_preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. 教师偏好表（cs_teacher_preferences）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-cs_teacher_course_qualification" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. 教师授课资质表（cs_teacher_course_qualification）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-cs_scheduling_conflict" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. 排课冲突表（cs_scheduling_conflict）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-cs_classroom_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. 教室类型表（cs_classroom_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-cs_classroom_tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. 教室标签表（cs_classroom_tag）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-cs_course_category" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. 课程类别表（cs_course_category）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-cs_course_nature" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. 课程性质表（cs_course_nature）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-cs_course_property" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. 课程属性表（cs_course_property）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-cs_course_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. 课程类型表（cs_course_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-cs_credit_hour_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. 学时类型表（cs_credit_hour_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-cs_teacher_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. 教师类型表（cs_teacher_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-cs_tables_chairs_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. 桌椅类型表（cs_tables_chairs_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-cs_unit_category" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. 单位类别表（cs_unit_category）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-cs_unit_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. 单位类型表（cs_unit_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-cs_role" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. 角色表（cs_role）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#30-cs_permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      30. 权限表（cs_permission）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-cs_academic_affairs_permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      31. 教务权限表（cs_academic_affairs_permission）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-cs_request_log" class="md-nav__link">
+    <span class="md-ellipsis">
+      32. 请求日志表（cs_request_log）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-cs_system" class="md-nav__link">
+    <span class="md-ellipsis">
+      33. 系统配置表（cs_system）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#343" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.3 数据库优化策略
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#344-e-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.4 数据库E-R图
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 功能模块设计
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 功能模块设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 模块划分
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 核心功能详细说明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 核心功能详细说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.1 智能排课功能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.2 冲突检测与处理功能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#423" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3 课表管理功能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#424" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.4 数据分析与统计功能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 用户角色与权限设计
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 用户界面设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 核心算法设计
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 核心算法设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 排课算法概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 算法流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 算法优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 算法创新点
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 系统实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 系统实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 开发环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 前端实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.2 前端实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#621" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2.1 技术栈详情
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#622" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2.2 主要实现模块
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#623" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2.3 性能优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 后端实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.3 后端实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#631" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3.1 技术栈详情
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#632" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3.2 主要实现模块
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#633-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3.3 API设计
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#634" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3.4 性能优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 数据库实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 数据库实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#641" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4.1 数据库设计优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#642-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4.2 SQL优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 系统测试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 系统测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 测试环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 功能测试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2 功能测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#721" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.1 测试范围
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#722" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.2 测试方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#723" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.3 测试结果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 性能测试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 性能测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#731" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.1 测试指标
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#732" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.2 测试场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#733" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.3 测试结果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 安全测试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4 安全测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#741" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.1 测试内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#742" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.2 测试方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#743" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.3 测试结果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 系统部署
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 系统部署">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 部署架构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 部署流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3 运维说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. 项目亮点与创新
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 项目亮点与创新">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 技术创新
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 功能亮点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 性能优势
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. 项目总结
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 项目总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.1 开发过程回顾
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2 技术难点与解决方案
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3 未来展望
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. 附录
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 附录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.1 团队分工
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.2 参考文献
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3 专业术语表
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manuscript/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视频文稿
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 项目概述
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 项目概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 项目背景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 项目目标
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 项目价值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 项目范围
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、可行性分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、可行性分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 经济可行性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 技术可行性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 社会可行性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-swot" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 SWOT分析
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 系统架构设计
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 系统架构设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 总体架构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 技术选型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 系统架构图
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 数据库设计
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 数据库设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.1 数据库表概览
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.2 数据表详细设计
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4.2 数据表详细设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cs_department" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 院系表（cs_department）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cs_major" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 专业表（cs_major）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-cs_grade" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 年级表（cs_grade）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cs_administrative_class" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 行政班级表（cs_administrative_class）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-cs_teacher" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 教师表（cs_teacher）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-cs_student" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 学生表（cs_student）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-cs_campus" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 校区表（cs_campus）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-cs_building" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 楼栋表（cs_building）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-cs_classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. 教室表（cs_classroom）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-cs_user" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. 用户表（cs_user）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-cs_course_library" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. 课程库表（cs_course_library）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-cs_semester" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. 学期表（cs_semester）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-cs_teaching_class" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. 教学班表（cs_teaching_class）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-cs_class_assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. 排课表（cs_class_assignment）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-cs_teacher_preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. 教师偏好表（cs_teacher_preferences）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-cs_teacher_course_qualification" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. 教师授课资质表（cs_teacher_course_qualification）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-cs_scheduling_conflict" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. 排课冲突表（cs_scheduling_conflict）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-cs_classroom_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. 教室类型表（cs_classroom_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-cs_classroom_tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. 教室标签表（cs_classroom_tag）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-cs_course_category" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. 课程类别表（cs_course_category）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-cs_course_nature" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. 课程性质表（cs_course_nature）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-cs_course_property" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. 课程属性表（cs_course_property）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-cs_course_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. 课程类型表（cs_course_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-cs_credit_hour_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. 学时类型表（cs_credit_hour_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-cs_teacher_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. 教师类型表（cs_teacher_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-cs_tables_chairs_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. 桌椅类型表（cs_tables_chairs_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-cs_unit_category" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. 单位类别表（cs_unit_category）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-cs_unit_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. 单位类型表（cs_unit_type）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-cs_role" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. 角色表（cs_role）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#30-cs_permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      30. 权限表（cs_permission）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-cs_academic_affairs_permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      31. 教务权限表（cs_academic_affairs_permission）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-cs_request_log" class="md-nav__link">
+    <span class="md-ellipsis">
+      32. 请求日志表（cs_request_log）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-cs_system" class="md-nav__link">
+    <span class="md-ellipsis">
+      33. 系统配置表（cs_system）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#343" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.3 数据库优化策略
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#344-e-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.4 数据库E-R图
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 功能模块设计
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 功能模块设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 模块划分
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 核心功能详细说明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 核心功能详细说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.1 智能排课功能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.2 冲突检测与处理功能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#423" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3 课表管理功能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#424" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.4 数据分析与统计功能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 用户角色与权限设计
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 用户界面设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 核心算法设计
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 核心算法设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 排课算法概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 算法流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 算法优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 算法创新点
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 系统实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 系统实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 开发环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 前端实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.2 前端实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#621" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2.1 技术栈详情
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#622" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2.2 主要实现模块
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#623" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2.3 性能优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 后端实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.3 后端实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#631" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3.1 技术栈详情
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#632" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3.2 主要实现模块
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#633-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3.3 API设计
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#634" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3.4 性能优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 数据库实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 数据库实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#641" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4.1 数据库设计优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#642-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4.2 SQL优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 系统测试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 系统测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 测试环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 功能测试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2 功能测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#721" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.1 测试范围
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#722" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.2 测试方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#723" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.3 测试结果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 性能测试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 性能测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#731" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.1 测试指标
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#732" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.2 测试场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#733" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.3 测试结果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 安全测试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4 安全测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#741" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.1 测试内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#742" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.2 测试方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#743" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.3 测试结果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 系统部署
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 系统部署">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 部署架构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 部署流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3 运维说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. 项目亮点与创新
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 项目亮点与创新">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 技术创新
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 功能亮点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 性能优势
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. 项目总结
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 项目总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.1 开发过程回顾
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2 技术难点与解决方案
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3 未来展望
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. 附录
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 附录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.1 团队分工
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.2 参考文献
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3 专业术语表
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">项目详细文档</h1>
+<h2 id="1">1. 项目概述</h2>
+<h3 id="11">1.1 项目背景</h3>
+<p>随着高等教育规模的不断扩展，课程安排变得愈加复杂。传统的排课方式已经难以应对庞大的课程安排需求，不仅效率低下，而且经常产生各种排课冲突，难以满足现代高校对于个性化、多样化教学的需求。同时，这也导致了教学资源分配的不平衡。</p>
+<p>高校排课涉及众多复杂因素，包括多样化的课程类型（如公共基础课、专业核心课、专业选修课、通识教育课等）、众多的授课教师、有限的教室资源（不同类型、容量和设备配置）、多样化的学生群体（不同专业、年级、班级）以及复杂的时间安排（课程时长、周次分布、时间段偏好等）。这些因素相互交织，形成了复杂的约束条件，导致排课过程极易出现时间冲突（同一时间安排多门课程或同一教师、教室在同一时间被重复使用）、资源不匹配（教室类型与课程需求不符）等问题，严重影响教学秩序和教学质量。</p>
+<p>近年来，人工智能技术的迅速发展为解决这些问题带来了新的机遇。基于AI的智慧排课系统成为推动高校教学管理现代化的重要手段。通过运用先进的算法优化课程安排，该系统能够满足不同高校的教学管理需求，提高教育资源的利用效率，从而全面提升教学质量。</p>
+<h3 id="12">1.2 项目目标</h3>
+<ol>
+<li><strong>实现自动化排课</strong>：利用遗传算法，综合考虑所有相关因素，实现自动化、精准化排课，要求功能设计完整，操作简洁高效。</li>
+<li><strong>优化资源利用</strong>：通过智能算法提高教室与教师资源的使用效率，减少冲突，充分利用有限的教学资源。</li>
+<li><strong>支持个性化需求</strong>：充分满足教师和学生在课程安排上的个性化需求，如教师特定授课时间段要求、学生课程时间偏好、特殊课程优先安排等。</li>
+<li><strong>实时冲突检测与智能优化</strong>：具备实时动态检测排课冲突的能力，一旦发现冲突立即预警，并快速生成可行的解决方案。</li>
+<li><strong>多维度可视化呈现</strong>：提供丰富多样的可视化界面，以周视图、月视图、学期视图等形式展示课程安排，方便师生直观查看课程信息，并支持一键切换和详细信息查询。</li>
+<li><strong>提供数据分析功能</strong>：对排课数据进行全面深入分析，为学校教学管理提供数据依据，如课程分布合理性分析、教师工作量均衡评估、教室资源利用率统计等，助力学校优化教学资源配置和教学决策制定。</li>
+</ol>
+<h3 id="13">1.3 项目价值</h3>
+<ol>
+<li><strong>提高排课效率</strong>：通过遗传算法配合 AI 大模型进行自动排课，将排课时间从传统的数周缩短至数小时，大幅提升工作效率。</li>
+<li><strong>优化资源配置</strong>：系统能智能分配教学资源，提高教室使用率，减少闲置浪费，实现资源的最优配置。</li>
+<li><strong>降低管理成本</strong>：减轻教务人员工作负担，降低人力成本，同时减少因排课错误导致的调整成本。</li>
+<li><strong>提升教学体验</strong>：通过满足师生个性化需求，减少课程冲突，提升教学体验和满意度。</li>
+<li><strong>支持教学决策</strong>：通过数据分析功能，为教学管理者提供决策依据，促进教学管理水平提升。</li>
+<li><strong>促进教育改革</strong>：为高校实施弹性学分制、选课制等教学改革提供技术支持，推动高校教育模式创新。</li>
+</ol>
+<h3 id="14">1.4 项目范围</h3>
+<p>本项目将开发一套面向高校的智能排课系统，包含以下三个维度的范围：</p>
+<p><strong>功能范围</strong>：实现支持3000门以上课程的智能排课引擎，包括基于遗传算法的自动排课、支持Excel导入导出的课表管理、秒级课程冲突检测与优化推荐、覆盖教师课程教室的资源管理、节假日批量调课以及教学资源利用率分析等核心功能模块。</p>
+<p><strong>技术范围</strong>：采用React+Spring Boot前后端分离架构，基于MySQL集群实现数据持久化，运用遗传算法结合强化学习实现智能排课，确保响应时间小于5秒，支持1000以上用户并发访问，实现基于角色的简单权限管理。</p>
+<p><strong>实施范围</strong>：完成从需求分析、系统设计、数据库建模、前后端开发、单元测试到部署文档、操作手册在内的完整交付物，并提供为期3个月的技术支持。</p>
+<h2 id="_2">二、可行性分析</h2>
+<h3 id="21">2.1 经济可行性</h3>
+<p>智课方舟从经济角度看前景广阔。国内高校数量庞大，智能排课系统渗透率低，市场空间充足。项目选用主流开源技术栈，避免了高额软件授权费用，并采用开源AI模型替代昂贵的商业API，有效控制了开发和运营成本。</p>
+<p>收入模式采用"软件+服务"组合，包括基础授权、年度维护、定制开发和技术培训等多元化收入来源。凭借超星集团现有的高校客户资源，项目能够迅速获取初期用户群体，实现快速收支平衡。</p>
+<p>从长远来看，项目积累的技术和经验可轻松迁移至其他教育场景，成为智慧校园整体解决方案的核心组件，持续创造价值并强化集团品牌实力。</p>
+<h3 id="22">2.2 技术可行性</h3>
+<p>智课方舟在技术实现上完全可行。系统采用多目标优化策略高效处理排课任务，通过前后端分离架构提升系统灵活性。前端使用React打造流畅界面，后端基于Spring Boot构建稳定服务，数据层结合MySQL和Redis确保数据存取高效。分布式设计让系统轻松应对高校排课高峰期的并发访问。开发团队拥有丰富教育信息化经验，已完成关键功能的原型验证，实施方案清晰可靠。</p>
+<h3 id="23">2.3 社会可行性</h3>
+<p>智课方舟完美契合当下高校信息化需求。系统采用业内主流技术方案和云平台部署，确保运行稳定和数据安全。用户界面设计贴近教务人员工作习惯，配合详细的培训服务，让用户轻松上手。采用敏捷开发策略，能根据实际使用反馈持续优化系统体验。</p>
+<p>项目顺应国家智慧校园建设政策导向，落实教育信息化2.0行动计划要求。系统帮助高校优化教学管理流程，合理配置教学资源，为教育改革提供有力的技术支撑，创造显著社会效益。</p>
+<h3 id="24-swot">2.4 SWOT分析</h3>
+<p><strong>优势</strong>：智课方舟采用先进算法，能快速高效地完成课程排表任务。智能预测技术优化教室资源配置和教师工作量分配，显著提升资源利用率。系统基于主流开源技术栈开发，为客户提供高性价比解决方案。</p>
+<p><strong>劣势</strong>：项目缺乏实际落地案例，需在实施过程中持续优化。部分高级功能仍在完善中，需根据用户反馈迭代升级。项目交付流程和实施标准尚未完全成熟，存在一定实施风险。</p>
+<p><strong>机会</strong>：国家教育信息化政策支持智慧校园建设，高校智能排课系统市场渗透率低，发展空间大。人工智能技术快速迭代，为算法优化提供了新可能。</p>
+<p><strong>威胁</strong>：市场竞争格局已趋稳定，头部竞品占据主导地位。高校排课规则差异大，需进行较多定制开发。人工智能技术更新快，需持续投入研发保持竞争力。</p>
+<h2 id="3">3. 系统架构设计</h2>
+<h3 id="31">3.1 总体架构</h3>
+<p>"智课方舟"系统采用前后端分离的B/S架构，遵循现代Web应用开发标准。系统整体架构分为四层：</p>
+<ol>
+<li><strong>表现层</strong>：负责用户界面展示和交互，采用响应式设计，确保在不同设备上有良好的使用体验。</li>
+<li><strong>应用层</strong>：处理业务逻辑，包括排课算法执行、冲突检测、数据分析等核心功能。</li>
+<li><strong>数据服务层</strong>：提供数据访问服务，负责数据的增删改查，并确保数据一致性和安全性。</li>
+<li><strong>基础设施层</strong>：提供系统运行所需的基础环境，包括服务器、数据库、缓存等。</li>
+</ol>
+<p>系统各组件之间通过标准REST API进行通信，保证了系统的可扩展性和灵活性。同时，采用微服务思想对功能模块进行解耦，使系统更易于维护和扩展。</p>
+<h3 id="32">3.2 技术选型</h3>
+<p><strong>前端技术</strong>：选择React作为前端核心框架构建现代化单页应用，搭配Tailwind CSS实现美观的响应式界面，并通过Redux高效管理应用状态，用Axios优雅处理与后端的数据交互，形成一套流畅而强大的用户体验。</p>
+<p><strong>后端技术</strong>：基于Spring Boot轻量级框架快速开发标准RESTful接口，实现简明有效的角色权限管控，利用MyBatis Plus高效访问和操作数据资源，并集成Redis提供超高速缓存服务，打造稳定可靠的服务端支持。</p>
+<p><strong>数据库</strong>：采用成熟稳定的MySQL数据库作为持久化存储的核心，结合Redis实现高效数据缓存机制，并引入MybatisPlus简化数据操作，大幅提高开发效率和系统性能。</p>
+<p><strong>安全与认证</strong>：通过基于Token的身份验证机制结合BCrypt加密算法保障系统访问安全，采用HTTPS协议进行传输层加密，巧妙利用Redis存储和管理用户会话信息，并设置合理过期策略，实现安全可靠的用户状态管理。</p>
+<h3 id="33">3.3 系统架构图</h3>
+<p>系统架构图如下所示：</p>
+<p>[此处应插入系统架构图，包括前后端组件、数据流向和外部系统集成关系]</p>
+<h3 id="34">3.4 数据库设计</h3>
+<p>基于项目实际需求和数据关系，本系统采用MySQL 8.2作为数据库管理系统。数据库设计充分考虑了数据的完整性、一致性和高效查询的需求，采用了规范化的设计原则。</p>
+<h4 id="341">3.4.1 数据库表概览</h4>
+<p>系统数据库共包含33个表，主要分为以下三大类：</p>
+<p><strong>1. 基础数据表</strong>：存储系统基础信息，如院系、专业、班级、教师、学生、教室等。
+<strong>2. 业务数据表</strong>：存储核心业务数据，如课程、排课、教师偏好等。
+<strong>3. 配置表</strong>：存储各类配置信息和枚举值，如课程类型、教室类型、角色权限等。</p>
+<p>下面是系统所有表的概览：</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>表名</th>
+<th>表类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>cs_department</td>
+<td>基础数据表</td>
+<td>院系表</td>
+</tr>
+<tr>
+<td>2</td>
+<td>cs_major</td>
+<td>基础数据表</td>
+<td>专业表</td>
+</tr>
+<tr>
+<td>3</td>
+<td>cs_grade</td>
+<td>基础数据表</td>
+<td>年级表</td>
+</tr>
+<tr>
+<td>4</td>
+<td>cs_administrative_class</td>
+<td>基础数据表</td>
+<td>行政班级表</td>
+</tr>
+<tr>
+<td>5</td>
+<td>cs_teacher</td>
+<td>基础数据表</td>
+<td>教师表</td>
+</tr>
+<tr>
+<td>6</td>
+<td>cs_student</td>
+<td>基础数据表</td>
+<td>学生表</td>
+</tr>
+<tr>
+<td>7</td>
+<td>cs_campus</td>
+<td>基础数据表</td>
+<td>校区表</td>
+</tr>
+<tr>
+<td>8</td>
+<td>cs_building</td>
+<td>基础数据表</td>
+<td>楼栋表</td>
+</tr>
+<tr>
+<td>9</td>
+<td>cs_classroom</td>
+<td>基础数据表</td>
+<td>教室表</td>
+</tr>
+<tr>
+<td>10</td>
+<td>cs_user</td>
+<td>基础数据表</td>
+<td>用户表</td>
+</tr>
+<tr>
+<td>11</td>
+<td>cs_course_library</td>
+<td>业务数据表</td>
+<td>课程库表</td>
+</tr>
+<tr>
+<td>12</td>
+<td>cs_semester</td>
+<td>业务数据表</td>
+<td>学期表</td>
+</tr>
+<tr>
+<td>13</td>
+<td>cs_teaching_class</td>
+<td>业务数据表</td>
+<td>教学班表</td>
+</tr>
+<tr>
+<td>14</td>
+<td>cs_class_assignment</td>
+<td>业务数据表</td>
+<td>排课表</td>
+</tr>
+<tr>
+<td>15</td>
+<td>cs_teacher_preferences</td>
+<td>业务数据表</td>
+<td>教师偏好表</td>
+</tr>
+<tr>
+<td>16</td>
+<td>cs_teacher_course_qualification</td>
+<td>业务数据表</td>
+<td>教师授课资质表</td>
+</tr>
+<tr>
+<td>17</td>
+<td>cs_scheduling_conflict</td>
+<td>业务数据表</td>
+<td>排课冲突表</td>
+</tr>
+<tr>
+<td>18</td>
+<td>cs_classroom_type</td>
+<td>配置表</td>
+<td>教室类型表</td>
+</tr>
+<tr>
+<td>19</td>
+<td>cs_classroom_tag</td>
+<td>配置表</td>
+<td>教室标签表</td>
+</tr>
+<tr>
+<td>20</td>
+<td>cs_course_category</td>
+<td>配置表</td>
+<td>课程类别表</td>
+</tr>
+<tr>
+<td>21</td>
+<td>cs_course_nature</td>
+<td>配置表</td>
+<td>课程性质表</td>
+</tr>
+<tr>
+<td>22</td>
+<td>cs_course_property</td>
+<td>配置表</td>
+<td>课程属性表</td>
+</tr>
+<tr>
+<td>23</td>
+<td>cs_course_type</td>
+<td>配置表</td>
+<td>课程类型表</td>
+</tr>
+<tr>
+<td>24</td>
+<td>cs_credit_hour_type</td>
+<td>配置表</td>
+<td>学时类型表</td>
+</tr>
+<tr>
+<td>25</td>
+<td>cs_teacher_type</td>
+<td>配置表</td>
+<td>教师类型表</td>
+</tr>
+<tr>
+<td>26</td>
+<td>cs_tables_chairs_type</td>
+<td>配置表</td>
+<td>桌椅类型表</td>
+</tr>
+<tr>
+<td>27</td>
+<td>cs_unit_category</td>
+<td>配置表</td>
+<td>单位类别表</td>
+</tr>
+<tr>
+<td>28</td>
+<td>cs_unit_type</td>
+<td>配置表</td>
+<td>单位类型表</td>
+</tr>
+<tr>
+<td>29</td>
+<td>cs_role</td>
+<td>配置表</td>
+<td>角色表</td>
+</tr>
+<tr>
+<td>30</td>
+<td>cs_permission</td>
+<td>配置表</td>
+<td>权限表</td>
+</tr>
+<tr>
+<td>31</td>
+<td>cs_academic_affairs_permission</td>
+<td>配置表</td>
+<td>教务权限表</td>
+</tr>
+<tr>
+<td>32</td>
+<td>cs_request_log</td>
+<td>配置表</td>
+<td>请求日志表</td>
+</tr>
+<tr>
+<td>33</td>
+<td>cs_system</td>
+<td>配置表</td>
+<td>系统配置表</td>
+</tr>
+</tbody>
+</table>
+<p>接下来将详细介绍每个表的结构。</p>
+<h4 id="342">3.4.2 数据表详细设计</h4>
+<h5 id="1-cs_department">1. 院系表（cs_department）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>department_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>部门主键</td>
+</tr>
+<tr>
+<td>department_code</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>部门编码</td>
+</tr>
+<tr>
+<td>department_name</td>
+<td>VARCHAR(64)</td>
+<td>否</td>
+<td>无</td>
+<td>部门名称</td>
+</tr>
+<tr>
+<td>department_order</td>
+<td>INT</td>
+<td>否</td>
+<td>100</td>
+<td>部门排序</td>
+</tr>
+<tr>
+<td>department_english_name</td>
+<td>VARCHAR(128)</td>
+<td>是</td>
+<td>null</td>
+<td>部门英文名称</td>
+</tr>
+<tr>
+<td>department_short_name</td>
+<td>VARCHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>部门简称</td>
+</tr>
+<tr>
+<td>department_address</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>部门地址</td>
+</tr>
+<tr>
+<td>is_entity</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>是否实体部门</td>
+</tr>
+<tr>
+<td>administrative_head</td>
+<td>VARCHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>行政负责人</td>
+</tr>
+<tr>
+<td>party_committee_head</td>
+<td>VARCHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>党委负责人</td>
+</tr>
+<tr>
+<td>establishment_date</td>
+<td>DATE</td>
+<td>否</td>
+<td>curdate()</td>
+<td>成立日期</td>
+</tr>
+<tr>
+<td>expiration_date</td>
+<td>DATE</td>
+<td>是</td>
+<td>null</td>
+<td>失效日期</td>
+</tr>
+<tr>
+<td>unit_category</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>单位类别</td>
+</tr>
+<tr>
+<td>unit_type</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>单位办别</td>
+</tr>
+<tr>
+<td>parent_department</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>上级部门</td>
+</tr>
+<tr>
+<td>assigned_teaching_building</td>
+<td>JSON</td>
+<td>是</td>
+<td>null</td>
+<td>分配教学楼</td>
+</tr>
+<tr>
+<td>is_teaching_college</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>开课院系</td>
+</tr>
+<tr>
+<td>is_attending_college</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>上课院系</td>
+</tr>
+<tr>
+<td>fixed_phone</td>
+<td>VARCHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>固定电话</td>
+</tr>
+<tr>
+<td>remark</td>
+<td>TEXT</td>
+<td>是</td>
+<td>null</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>is_teaching_office</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>0</td>
+<td>开课教研室</td>
+</tr>
+<tr>
+<td>is_enabled</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>是否启用</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="2-cs_major">2. 专业表（cs_major）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>major_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>专业主键</td>
+</tr>
+<tr>
+<td>major_name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>专业名称</td>
+</tr>
+<tr>
+<td>major_description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>专业描述</td>
+</tr>
+<tr>
+<td>major_code</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>专业代码</td>
+</tr>
+<tr>
+<td>major_status</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>专业状态 0:禁用 1:启用</td>
+</tr>
+<tr>
+<td>department_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学院外键</td>
+</tr>
+<tr>
+<td>education_years</td>
+<td>SMALLINT UNSIGNED</td>
+<td>否</td>
+<td>无</td>
+<td>学制（年）</td>
+</tr>
+<tr>
+<td>training_level</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>培养层次（例如：本科，专科）</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="3-cs_grade">3. 年级表（cs_grade）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>grade_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>年级主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>年级名称（如：2020级、2021级）</td>
+</tr>
+<tr>
+<td>year</td>
+<td>YEAR</td>
+<td>否</td>
+<td>无</td>
+<td>入学年份</td>
+</tr>
+<tr>
+<td>start_date</td>
+<td>DATE</td>
+<td>否</td>
+<td>无</td>
+<td>年级开始日期</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>DATE</td>
+<td>是</td>
+<td>null</td>
+<td>年级结束日期</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>年级描述</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="4-cs_administrative_class">4. 行政班级表（cs_administrative_class）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>administrative_class_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>行政班主键</td>
+</tr>
+<tr>
+<td>department_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>所属部门/院系</td>
+</tr>
+<tr>
+<td>major_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>所属专业</td>
+</tr>
+<tr>
+<td>class_code</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>班级编号</td>
+</tr>
+<tr>
+<td>class_name</td>
+<td>VARCHAR(64)</td>
+<td>否</td>
+<td>无</td>
+<td>班级名称</td>
+</tr>
+<tr>
+<td>grade_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>年级UUID</td>
+</tr>
+<tr>
+<td>student_count</td>
+<td>INT UNSIGNED</td>
+<td>否</td>
+<td>0</td>
+<td>学生人数</td>
+</tr>
+<tr>
+<td>counselor_uuid</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>辅导员UUID</td>
+</tr>
+<tr>
+<td>monitor_uuid</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>班长UUID</td>
+</tr>
+<tr>
+<td>is_enabled</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>是否启用(0:禁用,1:启用)</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>班级描述</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="5-cs_teacher">5. 教师表（cs_teacher）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>teacher_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教师主键</td>
+</tr>
+<tr>
+<td>unit_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>单位主键</td>
+</tr>
+<tr>
+<td>user_uuid</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>用户主键</td>
+</tr>
+<tr>
+<td>id</td>
+<td>VARCHAR(64)</td>
+<td>否</td>
+<td>无</td>
+<td>教师工号</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教师姓名</td>
+</tr>
+<tr>
+<td>english_name</td>
+<td>VARCHAR(256)</td>
+<td>否</td>
+<td>无</td>
+<td>教师英文名</td>
+</tr>
+<tr>
+<td>ethnic</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教师民族</td>
+</tr>
+<tr>
+<td>sex</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>无</td>
+<td>教师性别 0:女 1:男</td>
+</tr>
+<tr>
+<td>type</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教师类型</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>VARCHAR(16)</td>
+<td>是</td>
+<td>null</td>
+<td>教师电话</td>
+</tr>
+<tr>
+<td>email</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>教师邮箱</td>
+</tr>
+<tr>
+<td>job_title</td>
+<td>VARCHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>教师职称</td>
+</tr>
+<tr>
+<td>desc</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>教师描述</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="6-cs_student">6. 学生表（cs_student）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>student_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学生主键</td>
+</tr>
+<tr>
+<td>id</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学号</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学生姓名</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>无</td>
+<td>性别 0:女 1:男</td>
+</tr>
+<tr>
+<td>grade_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>年级UUID</td>
+</tr>
+<tr>
+<td>department</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>所属学院</td>
+</tr>
+<tr>
+<td>major</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>所属专业</td>
+</tr>
+<tr>
+<td>class</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>班级</td>
+</tr>
+<tr>
+<td>user_uuid</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>对应用户主键</td>
+</tr>
+<tr>
+<td>is_graduated</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>0</td>
+<td>是否毕业 0:未毕业 1:已毕业</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="7-cs_campus">7. 校区表（cs_campus）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>campus_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>校区主键</td>
+</tr>
+<tr>
+<td>campus_name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>校区名称</td>
+</tr>
+<tr>
+<td>campus_code</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>校区编码</td>
+</tr>
+<tr>
+<td>campus_desc</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>校区描述</td>
+</tr>
+<tr>
+<td>campus_status</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>校区状态 0:禁用 1:启用</td>
+</tr>
+<tr>
+<td>campus_address</td>
+<td>VARCHAR(255)</td>
+<td>否</td>
+<td>无</td>
+<td>校区地址</td>
+</tr>
+<tr>
+<td>latitude</td>
+<td>DECIMAL(10)</td>
+<td>是</td>
+<td>null</td>
+<td>纬度</td>
+</tr>
+<tr>
+<td>longitude</td>
+<td>DECIMAL(10)</td>
+<td>是</td>
+<td>null</td>
+<td>经度</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="8-cs_building">8. 楼栋表（cs_building）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>building_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教学楼主键</td>
+</tr>
+<tr>
+<td>building_name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教学楼名称</td>
+</tr>
+<tr>
+<td>campus_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>校区主键</td>
+</tr>
+<tr>
+<td>is_status</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>教学楼状态 0:禁用 1:启用</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="9-cs_classroom">9. 教室表（cs_classroom）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>classroom_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教室主键</td>
+</tr>
+<tr>
+<td>number</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教室编号</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教室名称</td>
+</tr>
+<tr>
+<td>campus_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>校区主键</td>
+</tr>
+<tr>
+<td>building_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>楼栋主键</td>
+</tr>
+<tr>
+<td>floor</td>
+<td>VARCHAR(4)</td>
+<td>否</td>
+<td>无</td>
+<td>楼层</td>
+</tr>
+<tr>
+<td>type</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教室类型</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>JSON</td>
+<td>是</td>
+<td>null</td>
+<td>教室标签</td>
+</tr>
+<tr>
+<td>capacity</td>
+<td>INT</td>
+<td>否</td>
+<td>无</td>
+<td>教室容量</td>
+</tr>
+<tr>
+<td>examination_room</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>0</td>
+<td>是否是考场</td>
+</tr>
+<tr>
+<td>examination_room_capacity</td>
+<td>INT</td>
+<td>是</td>
+<td>null</td>
+<td>考场容量</td>
+</tr>
+<tr>
+<td>is_multimedia</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>0</td>
+<td>是否是多媒体教室</td>
+</tr>
+<tr>
+<td>is_air_conditioned</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>0</td>
+<td>是否有空调</td>
+</tr>
+<tr>
+<td>status</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>教室状态 0:禁用 1:启用</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>教室描述</td>
+</tr>
+<tr>
+<td>management_department</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>管理部门</td>
+</tr>
+<tr>
+<td>area</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>无</td>
+<td>教室面积</td>
+</tr>
+<tr>
+<td>tables_chairs_type</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>桌椅类型</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="10-cs_user">10. 用户表（cs_user）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>用户主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>用户名</td>
+</tr>
+<tr>
+<td>password</td>
+<td>CHAR(60)</td>
+<td>否</td>
+<td>无</td>
+<td>用户密码</td>
+</tr>
+<tr>
+<td>email</td>
+<td>VARCHAR(255)</td>
+<td>否</td>
+<td>无</td>
+<td>用户邮箱</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>VARCHAR(11)</td>
+<td>否</td>
+<td>无</td>
+<td>用户手机号</td>
+</tr>
+<tr>
+<td>status</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>用户状态 0:禁用 1:启用</td>
+</tr>
+<tr>
+<td>ban</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>0</td>
+<td>用户是否被封禁 0:未封禁 1:已封禁</td>
+</tr>
+<tr>
+<td>role_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>角色UUID</td>
+</tr>
+<tr>
+<td>permission</td>
+<td>JSON</td>
+<td>是</td>
+<td>null</td>
+<td>用户权限</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="11-cs_course_library">11. 课程库表（cs_course_library）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>course_library_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程库主键</td>
+</tr>
+<tr>
+<td>id</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程编号</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程库名称</td>
+</tr>
+<tr>
+<td>english_name</td>
+<td>VARCHAR(128)</td>
+<td>是</td>
+<td>null</td>
+<td>课程英文名称</td>
+</tr>
+<tr>
+<td>category</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>课程类别</td>
+</tr>
+<tr>
+<td>property</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>课程属性</td>
+</tr>
+<tr>
+<td>type</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程类型</td>
+</tr>
+<tr>
+<td>nature</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>课程性质</td>
+</tr>
+<tr>
+<td>department</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>开课学院</td>
+</tr>
+<tr>
+<td>is_enabled</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>是否启用</td>
+</tr>
+<tr>
+<td>total_hours</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>0.00</td>
+<td>总学时</td>
+</tr>
+<tr>
+<td>week_hours</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>0.00</td>
+<td>周学时</td>
+</tr>
+<tr>
+<td>theory_hours</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>0.00</td>
+<td>理论学时</td>
+</tr>
+<tr>
+<td>experiment_hours</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>0.00</td>
+<td>实验学时</td>
+</tr>
+<tr>
+<td>practice_hours</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>0.00</td>
+<td>实践学时</td>
+</tr>
+<tr>
+<td>computer_hours</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>0.00</td>
+<td>上机学时</td>
+</tr>
+<tr>
+<td>other_hours</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>0.00</td>
+<td>其他学时</td>
+</tr>
+<tr>
+<td>credit</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>0.00</td>
+<td>学分</td>
+</tr>
+<tr>
+<td>theory_classroom_type</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>理论课教室类型</td>
+</tr>
+<tr>
+<td>experiment_classroom_type</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>实验课教室类型</td>
+</tr>
+<tr>
+<td>practice_classroom_type</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>实践课教室类型</td>
+</tr>
+<tr>
+<td>computer_classroom_type</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>上机课教室类型</td>
+</tr>
+<tr>
+<td>description</td>
+<td>TEXT</td>
+<td>是</td>
+<td>null</td>
+<td>课程库描述</td>
+</tr>
+<tr>
+<td>edit_user</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>编辑人</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="12-cs_semester">12. 学期表（cs_semester）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>semester_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学期主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学期名称</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>学期描述</td>
+</tr>
+<tr>
+<td>start_date</td>
+<td>DATE</td>
+<td>否</td>
+<td>无</td>
+<td>学期开始日期</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>DATE</td>
+<td>否</td>
+<td>无</td>
+<td>学期结束日期</td>
+</tr>
+<tr>
+<td>is_current</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>0</td>
+<td>是否当前学期</td>
+</tr>
+<tr>
+<td>is_enabled</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>是否启用</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="13-cs_teaching_class">13. 教学班表（cs_teaching_class）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>teaching_class_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教学班主键</td>
+</tr>
+<tr>
+<td>semester_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学期主键</td>
+</tr>
+<tr>
+<td>course_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程主键</td>
+</tr>
+<tr>
+<td>teaching_class_code</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教学班编号</td>
+</tr>
+<tr>
+<td>teaching_class_name</td>
+<td>VARCHAR(64)</td>
+<td>否</td>
+<td>无</td>
+<td>教学班名称</td>
+</tr>
+<tr>
+<td>administrative_classes</td>
+<td>JSON</td>
+<td>否</td>
+<td>无</td>
+<td>包含的行政班级(包含班级UUID)</td>
+</tr>
+<tr>
+<td>is_administrative</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>如果是必修课则该字段为true，否则为false</td>
+</tr>
+<tr>
+<td>class_size</td>
+<td>INT UNSIGNED</td>
+<td>否</td>
+<td>0</td>
+<td>班级规模</td>
+</tr>
+<tr>
+<td>actual_student_count</td>
+<td>INT UNSIGNED</td>
+<td>否</td>
+<td>0</td>
+<td>实际学生人数</td>
+</tr>
+<tr>
+<td>course_department_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>开课院系</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>教学班描述</td>
+</tr>
+<tr>
+<td>is_enabled</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>是否启用(0:禁用,1:启用)</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="14-cs_class_assignment">14. 排课表（cs_class_assignment）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class_assignment_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>排课主键</td>
+</tr>
+<tr>
+<td>semester_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学期主键</td>
+</tr>
+<tr>
+<td>course_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程主键</td>
+</tr>
+<tr>
+<td>teacher_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教师主键</td>
+</tr>
+<tr>
+<td>campus_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>校区主键</td>
+</tr>
+<tr>
+<td>building_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教学楼主键</td>
+</tr>
+<tr>
+<td>classroom_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教室主键</td>
+</tr>
+<tr>
+<td>teaching_class_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教学班主键</td>
+</tr>
+<tr>
+<td>course_ownership</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程归属</td>
+</tr>
+<tr>
+<td>credit_hour_type</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学时类型</td>
+</tr>
+<tr>
+<td>teaching_hours</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>0.00</td>
+<td>教学学时（教师实际授课学时）</td>
+</tr>
+<tr>
+<td>scheduled_hours</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>0.00</td>
+<td>排课学时（课程安排的学时）</td>
+</tr>
+<tr>
+<td>total_hours</td>
+<td>DECIMAL(10)</td>
+<td>否</td>
+<td>0.00</td>
+<td>总需学时</td>
+</tr>
+<tr>
+<td>scheduling_priority</td>
+<td>SMALLINT UNSIGNED</td>
+<td>否</td>
+<td>100</td>
+<td>排课优先级</td>
+</tr>
+<tr>
+<td>teaching_campus</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教学校区</td>
+</tr>
+<tr>
+<td>class_time</td>
+<td>JSON</td>
+<td>否</td>
+<td>无</td>
+<td>上课时间</td>
+</tr>
+<tr>
+<td>consecutive_sessions</td>
+<td>TINYINT UNSIGNED</td>
+<td>否</td>
+<td>2</td>
+<td>连堂节数</td>
+</tr>
+<tr>
+<td>classroom_type</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教室类型</td>
+</tr>
+<tr>
+<td>specified_time</td>
+<td>JSON</td>
+<td>是</td>
+<td>null</td>
+<td>指定时间</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="15-cs_teacher_preferences">15. 教师偏好表（cs_teacher_preferences）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>preference_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教师喜好主键</td>
+</tr>
+<tr>
+<td>teacher_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教师主键</td>
+</tr>
+<tr>
+<td>semester_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学期主键</td>
+</tr>
+<tr>
+<td>day_of_week</td>
+<td>TINYINT</td>
+<td>否</td>
+<td>无</td>
+<td>星期几（1-7）</td>
+</tr>
+<tr>
+<td>time_slot</td>
+<td>TINYINT</td>
+<td>否</td>
+<td>无</td>
+<td>第几节课（1-12）</td>
+</tr>
+<tr>
+<td>preference_level</td>
+<td>TINYINT</td>
+<td>否</td>
+<td>无</td>
+<td>偏好程度（1：最不期望，2：尽量避免，3：可接受，4：较期望，5：非常期望）</td>
+</tr>
+<tr>
+<td>reason</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>偏好原因</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="16-cs_teacher_course_qualification">16. 教师授课资质表（cs_teacher_course_qualification）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>qualification_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>资格主键</td>
+</tr>
+<tr>
+<td>teacher_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教师主键</td>
+</tr>
+<tr>
+<td>course_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程主键</td>
+</tr>
+<tr>
+<td>qualification_level</td>
+<td>TINYINT</td>
+<td>否</td>
+<td>1</td>
+<td>资格等级 1:初级 2:中级 3:高级</td>
+</tr>
+<tr>
+<td>is_primary</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>0</td>
+<td>是否主讲教师</td>
+</tr>
+<tr>
+<td>teach_years</td>
+<td>TINYINT</td>
+<td>否</td>
+<td>0</td>
+<td>教授年限</td>
+</tr>
+<tr>
+<td>status</td>
+<td>TINYINT</td>
+<td>否</td>
+<td>1</td>
+<td>状态 0:待审核 1:已审核 2:已驳回</td>
+</tr>
+<tr>
+<td>remarks</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>备注说明</td>
+</tr>
+<tr>
+<td>approved_by</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>审核人</td>
+</tr>
+<tr>
+<td>approved_at</td>
+<td>TIMESTAMP</td>
+<td>是</td>
+<td>null</td>
+<td>审核时间</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="17-cs_scheduling_conflict">17. 排课冲突表（cs_scheduling_conflict）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>conflict_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>冲突主键</td>
+</tr>
+<tr>
+<td>semester_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学期主键</td>
+</tr>
+<tr>
+<td>first_assignment_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>第一个排课主键</td>
+</tr>
+<tr>
+<td>second_assignment_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>第二个排课主键</td>
+</tr>
+<tr>
+<td>conflict_type</td>
+<td>TINYINT UNSIGNED</td>
+<td>否</td>
+<td>无</td>
+<td>冲突类型: 1-教师冲突 2-教室冲突 3-班级冲突 4-其他冲突</td>
+</tr>
+<tr>
+<td>conflict_time</td>
+<td>JSON</td>
+<td>否</td>
+<td>无</td>
+<td>冲突时间</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>冲突描述</td>
+</tr>
+<tr>
+<td>resolution_status</td>
+<td>TINYINT UNSIGNED</td>
+<td>否</td>
+<td>0</td>
+<td>解决状态: 0-未解决 1-已解决 2-忽略</td>
+</tr>
+<tr>
+<td>resolution_method</td>
+<td>TINYINT UNSIGNED</td>
+<td>是</td>
+<td>null</td>
+<td>解决方法: 1-调整第一个课程 2-调整第二个课程 3-同时调整 4-其他</td>
+</tr>
+<tr>
+<td>resolution_notes</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>解决备注</td>
+</tr>
+<tr>
+<td>resolved_by</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>解决人</td>
+</tr>
+<tr>
+<td>resolved_at</td>
+<td>TIMESTAMP</td>
+<td>是</td>
+<td>null</td>
+<td>解决时间</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="18-cs_classroom_type">18. 教室类型表（cs_classroom_type）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class_type_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教室类型主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教室类型名称</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>教室类型描述</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="19-cs_classroom_tag">19. 教室标签表（cs_classroom_tag）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class_tag_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教室标签主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教室标签名称</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>教室标签描述</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="20-cs_course_category">20. 课程类别表（cs_course_category）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>course_category_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程分类主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程分类名称</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>课程分类描述</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="21-cs_course_nature">21. 课程性质表（cs_course_nature）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>course_nature_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程性质主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程性质名称</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>课程性质描述</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="22-cs_course_property">22. 课程属性表（cs_course_property）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>course_property_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程属性主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程属性名称</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>课程属性描述</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="23-cs_course_type">23. 课程类型表（cs_course_type）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>course_type_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程类型主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>课程类型名称</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>课程类型描述</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="24-cs_credit_hour_type">24. 学时类型表（cs_credit_hour_type）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>credit_hour_type_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学时类型主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>学时类型名称</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>学时类型描述</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="25-cs_teacher_type">25. 教师类型表（cs_teacher_type）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>teacher_type_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教师类型主键</td>
+</tr>
+<tr>
+<td>type_name</td>
+<td>VARCHAR(64)</td>
+<td>否</td>
+<td>无</td>
+<td>类型名称</td>
+</tr>
+<tr>
+<td>type_english_name</td>
+<td>VARCHAR(256)</td>
+<td>否</td>
+<td>无</td>
+<td>类型英文名称</td>
+</tr>
+<tr>
+<td>type_desc</td>
+<td>VARCHAR(256)</td>
+<td>是</td>
+<td>null</td>
+<td>类型描述</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="26-cs_tables_chairs_type">26. 桌椅类型表（cs_tables_chairs_type）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tables_chairs_type_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>桌椅类型主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>桌椅类型名称</td>
+</tr>
+<tr>
+<td>description</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>桌椅类型描述</td>
+</tr>
+<tr>
+<td>base64_img</td>
+<td>TEXT</td>
+<td>是</td>
+<td>null</td>
+<td>桌椅类型图片</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="27-cs_unit_category">27. 单位类别表（cs_unit_category）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unit_category_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>单位类别主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>单位类别名称</td>
+</tr>
+<tr>
+<td>order</td>
+<td>INT</td>
+<td>否</td>
+<td>100</td>
+<td>单位类别排序</td>
+</tr>
+<tr>
+<td>english_name</td>
+<td>VARCHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>单位类别英文名称</td>
+</tr>
+<tr>
+<td>short_name</td>
+<td>VARCHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>单位类别简称</td>
+</tr>
+<tr>
+<td>is_entity</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>是否实体单位类别</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="28-cs_unit_type">28. 单位类型表（cs_unit_type）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unit_type_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>单位办别主键</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>单位名称</td>
+</tr>
+<tr>
+<td>english_name</td>
+<td>VARCHAR(128)</td>
+<td>是</td>
+<td>null</td>
+<td>单位英文名称</td>
+</tr>
+<tr>
+<td>short_name</td>
+<td>VARCHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>单位简称</td>
+</tr>
+<tr>
+<td>order</td>
+<td>INT</td>
+<td>否</td>
+<td>100</td>
+<td>单位排序</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="29-cs_role">29. 角色表（cs_role）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>role_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>角色主键</td>
+</tr>
+<tr>
+<td>role_name</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>角色名</td>
+</tr>
+<tr>
+<td>role_status</td>
+<td>BIT(1)</td>
+<td>否</td>
+<td>1</td>
+<td>角色状态 0:禁用 1:启用</td>
+</tr>
+<tr>
+<td>permission</td>
+<td>JSON</td>
+<td>是</td>
+<td>null</td>
+<td>角色权限</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="30-cs_permission">30. 权限表（cs_permission）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>permission_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>权限主键</td>
+</tr>
+<tr>
+<td>permission_key</td>
+<td>VARCHAR(255)</td>
+<td>否</td>
+<td>无</td>
+<td>权限键，格式为 key1.key2.key3</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(128)</td>
+<td>否</td>
+<td>无</td>
+<td>权限名称</td>
+</tr>
+<tr>
+<td>desc</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>权限描述</td>
+</tr>
+</tbody>
+</table>
+<h5 id="31-cs_academic_affairs_permission">31. 教务权限表（cs_academic_affairs_permission）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>academic_affairs_permission_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>教务权限主键</td>
+</tr>
+<tr>
+<td>authorized_user</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>授权用户</td>
+</tr>
+<tr>
+<td>department</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>部门（要求该部门为院系）</td>
+</tr>
+<tr>
+<td>type</td>
+<td>TINYINT</td>
+<td>否</td>
+<td>无</td>
+<td>类型 0:所有权限, 1:教务权限...</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="32-cs_request_log">32. 请求日志表（cs_request_log）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>request_log_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>请求日志主键</td>
+</tr>
+<tr>
+<td>user_uuid</td>
+<td>CHAR(32)</td>
+<td>是</td>
+<td>null</td>
+<td>用户UUID</td>
+</tr>
+<tr>
+<td>request_ip</td>
+<td>VARCHAR(50)</td>
+<td>否</td>
+<td>无</td>
+<td>请求IP地址</td>
+</tr>
+<tr>
+<td>user_agent</td>
+<td>VARCHAR(500)</td>
+<td>否</td>
+<td>无</td>
+<td>用户代理信息</td>
+</tr>
+<tr>
+<td>request_url</td>
+<td>VARCHAR(500)</td>
+<td>否</td>
+<td>无</td>
+<td>请求URL</td>
+</tr>
+<tr>
+<td>request_method</td>
+<td>VARCHAR(10)</td>
+<td>否</td>
+<td>无</td>
+<td>请求方法(GET/POST等)</td>
+</tr>
+<tr>
+<td>request_params</td>
+<td>TEXT</td>
+<td>是</td>
+<td>null</td>
+<td>请求参数</td>
+</tr>
+<tr>
+<td>request_body</td>
+<td>TEXT</td>
+<td>是</td>
+<td>null</td>
+<td>请求体</td>
+</tr>
+<tr>
+<td>response_code</td>
+<td>INT</td>
+<td>否</td>
+<td>无</td>
+<td>响应状态码</td>
+</tr>
+<tr>
+<td>error_message</td>
+<td>VARCHAR(255)</td>
+<td>是</td>
+<td>null</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td>execution_time</td>
+<td>BIGINT</td>
+<td>否</td>
+<td>无</td>
+<td>执行时间(毫秒)</td>
+</tr>
+<tr>
+<td>request_time</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>无</td>
+<td>请求时间</td>
+</tr>
+<tr>
+<td>response_time</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>无</td>
+<td>响应时间</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+</tbody>
+</table>
+<h5 id="33-cs_system">33. 系统配置表（cs_system）</h5>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>允许为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>system_uuid</td>
+<td>CHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>系统主键</td>
+</tr>
+<tr>
+<td>system_key</td>
+<td>VARCHAR(32)</td>
+<td>否</td>
+<td>无</td>
+<td>系统键</td>
+</tr>
+<tr>
+<td>system_val</td>
+<td>TEXT</td>
+<td>是</td>
+<td>null</td>
+<td>系统值</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>TIMESTAMP</td>
+<td>否</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>更新时间</td>
+</tr>
+</tbody>
+</table>
+<h4 id="343">3.4.3 数据库优化策略</h4>
+<p><strong>索引优化</strong>：为课程、教师、教室等常用查询字段建立合适索引，对常用组合查询创建复合索引，选择合适的索引类型提升查询性能。</p>
+<p><strong>数据类型选择</strong>：根据数据特点选择最优类型，课程代码用CHAR，教师名称用VARCHAR，复杂数据如班级列表用JSON，以平衡性能和存储空间。</p>
+<p><strong>查询优化</strong>：优化表连接关系降低查询开销，对排课记录按学期分区，对热点数据如课表查询使用缓存策略提速。</p>
+<p><strong>数据一致性</strong>：通过外键约束和事务机制确保数据完整性，记录数据变更日志便于追踪和恢复。</p>
+<h4 id="344-e-r">3.4.4 数据库E-R图</h4>
+<p>[此处应插入数据库E-R图，展示实体间的关系]</p>
+<h2 id="4">4. 功能模块设计</h2>
+<h3 id="41">4.1 模块划分</h3>
+<p>"智课方舟"系统基于功能职责划分为以下核心模块：</p>
+<p><strong>用户管理模块</strong>：负责系统用户的全生命周期管理，包括用户注册、登录认证、角色权限分配，以及个人信息的维护与更新，确保系统访问的安全性和可控性。</p>
+<p><strong>基础数据管理模块</strong>：统一管理院系、专业、班级等组织架构信息，以及教师信息、课程信息、教室资源等基础数据，为排课系统提供完整的数据支撑。</p>
+<p><strong>排课策略管理模块</strong>：提供灵活的排课规则配置功能，允许设置各类优先级和约束条件，支持自定义排课策略，使排课结果更符合实际需求。</p>
+<p><strong>智能排课模块</strong>：系统的核心功能模块，通过遗传算法自动生成课表，实时监控排课进度，并对排课结果进行智能优化，提供高效的排课解决方案。</p>
+<p><strong>手动排课与调整模块</strong>：提供直观的图形化界面，支持课表的手动编排和灵活调整，通过拖拽操作实现课程时间和地点的快速变更。</p>
+<p><strong>冲突检测与处理模块</strong>：实时监控并智能识别各类排课冲突，自动分析冲突原因，并提供多种可行的解决方案，确保课表的可行性。</p>
+<p><strong>课表管理模块</strong>：支持多维度的课表查询和展示，包括班级、教师、教室等不同视角，并提供丰富的课表导出打印功能。</p>
+<p><strong>智能调课模块</strong>：针对节假日调课和临时课程变更，提供智能化的调课方案，自动处理时间顺延，最小化调课影响。</p>
+<p><strong>数据分析与统计模块</strong>：深入分析教学资源使用情况，通过可视化图表展示教室利用率、教师工作量等关键指标，为教学管理决策提供数据支持。</p>
+<p><strong>系统管理模块</strong>：提供系统运行所需的基础配置管理，包括参数设置、日志管理、数据备份与恢复等功能，保障系统的稳定运行。</p>
+<h3 id="42">4.2 核心功能详细说明</h3>
+<h4 id="421">4.2.1 智能排课功能</h4>
+<p>智能排课是系统的核心功能，基于遗传算法实现，综合考虑多种约束条件，自动生成满足要求的课表方案。</p>
+<p><strong>主要功能点</strong>：</p>
+<ul>
+<li><strong>排课策略设置</strong>：支持设置排课的约束条件和优先级规则，如教师偏好、教室要求、连排规则等。</li>
+<li><strong>自动排课执行</strong>：一键启动自动排课流程，系统自动分配课程时间和教室。</li>
+<li><strong>排课进度监控</strong>：实时显示排课进度，包括总任务数、已完成任务数和未完成任务数。</li>
+<li><strong>排课结果展示</strong>：多维度展示排课结果，支持按班级、教师、教室等不同维度查看。</li>
+<li><strong>未排课程分析</strong>：对未能成功排入的课程进行原因分析，提供改进建议。</li>
+</ul>
+<h4 id="422">4.2.2 冲突检测与处理功能</h4>
+<p>系统能够实时检测排课过程中的各类冲突，并提供智能解决方案。</p>
+<p><strong>主要功能点</strong>：</p>
+<ul>
+<li><strong>多维度冲突检测</strong>：检测包括教师冲突、教室冲突、班级冲突等多种冲突类型。</li>
+<li><strong>冲突可视化展示</strong>：以图形化方式直观展示冲突情况，便于用户理解。</li>
+<li><strong>智能解决方案</strong>：系统自动生成多种可行的冲突解决方案，并计算各方案的影响范围。</li>
+<li><strong>一键应用方案</strong>：用户可选择合适的解决方案一键应用，系统自动调整受影响的课程。</li>
+</ul>
+<h4 id="423">4.2.3 课表管理功能</h4>
+<p>提供全面的课表查询、管理和导出功能，满足不同用户的使用需求。</p>
+<p><strong>主要功能点</strong>：</p>
+<ul>
+<li><strong>多维度课表查询</strong>：支持按班级、教师、教室、课程等维度查询课表。</li>
+<li><strong>个性化视图</strong>：提供日视图、周视图、月视图和学期视图等多种视图模式。</li>
+<li><strong>课表导出</strong>：支持将课表导出为Excel、PDF等多种格式。</li>
+<li><strong>课表打印</strong>：提供打印友好的课表布局，支持自定义打印参数。</li>
+</ul>
+<h4 id="424">4.2.4 数据分析与统计功能</h4>
+<p>基于排课数据，提供深入的数据分析和统计功能，为教学管理决策提供支持。</p>
+<p><strong>主要功能点</strong>：</p>
+<ul>
+<li><strong>教室利用率分析</strong>：统计不同时间段、不同类型教室的使用情况。</li>
+<li><strong>教师工作量分析</strong>：计算教师课时分布、峰谷分布等信息。</li>
+<li><strong>课程分布分析</strong>：分析不同类型课程的时间分布情况。</li>
+<li><strong>图表可视化</strong>：使用柱状图、饼图、热力图等多种图表直观展示分析结果。</li>
+<li><strong>报表导出</strong>：支持将分析报告导出为Excel或PDF格式。</li>
+</ul>
+<h3 id="43">4.3 用户角色与权限设计</h3>
+<p>系统根据不同用户的职责和需求，设计了以下角色及对应权限：</p>
+<ol>
+<li>
+<p><strong>系统管理员</strong>：全面管理系统配置、用户角色和基础数据，负责系统的整体维护。</p>
+</li>
+<li>
+<p><strong>教务管理员</strong>：负责排课策略配置、执行自动排课、审核发布课表，并进行教学数据分析。</p>
+</li>
+<li>
+<p><strong>二级学院管理员</strong>：管理本学院的教师信息、课程信息和排课事务，可查询和导出本学院课表。</p>
+</li>
+<li>
+<p><strong>教师</strong>：查看个人课表和教学安排，设置个人排课偏好，提交临时调课申请。</p>
+</li>
+<li>
+<p><strong>学生</strong>（预留）：查看个人课表和教室占用情况。</p>
+</li>
+</ol>
+<h3 id="44">4.4 用户界面设计</h3>
+<p>系统界面设计遵循简洁、直观、高效的原则，主要包括以下几个核心界面：</p>
+<ol>
+<li>
+<p><strong>仪表盘界面</strong>：集成系统概览、待办事项提醒和系统公告于一体的信息聚合展示平台。</p>
+</li>
+<li>
+<p><strong>排课管理界面</strong>：提供排课参数配置、自动排课控制、进度监控和结果展示的一站式排课管理平台。</p>
+</li>
+<li>
+<p><strong>课表查询与管理界面</strong>：支持多维度查询筛选、多视图展示和导出打印的综合课表管理平台。</p>
+</li>
+<li>
+<p><strong>手动排课界面</strong>：通过拖拽式操作实现课程安排，并提供实时冲突检测的可视化排课工具。</p>
+</li>
+<li>
+<p><strong>数据分析界面</strong>：整合多维度分析指标、图表展示和报表导出功能的数据可视化平台。</p>
+</li>
+<li>
+<p><strong>系统管理界面</strong>：提供用户权限管理、基础数据维护、系统参数配置和日志查询的统一管理平台。</p>
+</li>
+</ol>
+<p>所有界面均采用响应式设计，确保在不同设备上都能获得良好的使用体验。界面交互设计注重用户体验，提供直观的操作反馈和必要的引导提示。</p>
+<h2 id="5">5. 核心算法设计</h2>
+<h3 id="51">5.1 排课算法概述</h3>
+<p>智能排课算法是系统的核心，采用改进的遗传算法作为基础，结合贪心策略和局部搜索优化，实现高效的自动排课。</p>
+<p>该算法能够处理多目标优化问题，平衡满足硬约束（必须满足的条件）和软约束（尽量满足的偏好）之间的关系。算法设计考虑了可扩展性，支持动态添加新的约束条件和优化目标。</p>
+<p><strong>算法关键特点</strong>：</p>
+<ul>
+<li><strong>多目标优化</strong>：同时优化多个目标，如减少冲突、提高资源利用率、满足个性化需求等。</li>
+<li><strong>约束处理能力</strong>：能够有效处理复杂的约束条件，包括时间约束、空间约束、教师偏好等。</li>
+<li><strong>高效性能</strong>：通过并行计算和优化的数据结构，提高算法执行效率。</li>
+<li><strong>稳定性</strong>：采用多次运行取最优解的策略，确保结果的稳定性。</li>
+<li><strong>可解释性</strong>：提供算法决策过程的可视化和解释，增强用户信任。</li>
+</ul>
+<h3 id="52">5.2 算法流程</h3>
+<p>排课算法的整体流程如下：</p>
+<ol>
+<li>
+<p><strong>初始化</strong>：加载教学任务、教室资源和时间段等基础数据，设置算法参数并生成初始种群。</p>
+</li>
+<li>
+<p><strong>适应度评估</strong>：计算每个排课方案的适应度值，评估硬约束和软约束满足情况，综合得出总体评分。</p>
+</li>
+<li>
+<p><strong>选择操作</strong>：基于适应度值选择优质个体，采用轮盘赌和精英保留相结合的选择策略。</p>
+</li>
+<li>
+<p><strong>交叉操作</strong>：对选中的个体进行交叉操作，使用改进的交叉算子确保生成的子代仍符合基本约束。</p>
+</li>
+<li>
+<p><strong>变异操作</strong>：对个体进行随机变异，采用自适应变异率根据种群收敛情况动态调整。</p>
+</li>
+<li>
+<p><strong>局部搜索优化</strong>：对适应度较高的个体进行局部搜索，优化局部排课结果以提高总体适应度。</p>
+</li>
+<li>
+<p><strong>终止判断</strong>：当达到最大迭代次数或满足收敛条件时终止算法，输出最优排课方案。</p>
+</li>
+<li>
+<p><strong>后处理</strong>：分析未能满足的约束条件，生成排课报告，包括统计信息和未排课程原因分析。</p>
+</li>
+</ol>
+<h3 id="53">5.3 算法优化</h3>
+<p>为了提高排课算法的效率和结果质量，我们对标准遗传算法进行了以下几方面的优化：</p>
+<ol>
+<li>
+<p><strong>染色体编码优化</strong>：采用三维编码方式并使用整数编码代替二进制编码，减少冲突检测复杂度并提高编码效率。</p>
+</li>
+<li>
+<p><strong>初始种群生成优化</strong>：结合贪心策略生成部分高质量初始解，同时引入多样性保持机制避免早期收敛。</p>
+</li>
+<li>
+<p><strong>适应度计算优化</strong>：使用分级惩罚机制区分不同严重程度的约束违反，并引入动态权重调整机制适应约束满足情况。</p>
+</li>
+<li>
+<p><strong>交叉算子优化</strong>：设计教育领域特定的交叉算子保留父代优良特性，同时引入基于知识的修复机制减少无效解。</p>
+</li>
+<li>
+<p><strong>并行计算优化</strong>：利用多线程并行计算适应度，并采用岛屿模型并行遗传算法提高搜索效率。</p>
+</li>
+<li>
+<p><strong>记忆机制</strong>：引入记忆库存储历史优质解，周期性从记忆库中恢复优质基因防止优质特征丢失。</p>
+</li>
+</ol>
+<h3 id="54">5.4 算法创新点</h3>
+<p>本项目在排课算法方面的创新主要体现在以下几个方面：</p>
+<ol>
+<li>
+<p><strong>自适应遗传算法框架</strong>：开发了适应排课场景的自适应遗传算法框架，根据进化过程自动调整选择压力、交叉率和变异率。</p>
+</li>
+<li>
+<p><strong>多级约束处理机制</strong>：创新性地提出多级约束处理机制，将约束分为必要约束、重要约束和偏好约束，采用不同策略确保约束满足。</p>
+</li>
+<li>
+<p><strong>混合元启发式算法</strong>：将遗传算法与模拟退火、禁忌搜索等其他元启发式算法结合，在全局搜索和局部优化之间取得平衡。</p>
+</li>
+<li>
+<p><strong>智能冲突解决策略</strong>：开发了智能冲突解决策略，能根据冲突类型自动生成多种解决方案，并从历史排课经验中学习最佳解决模式。</p>
+</li>
+<li>
+<p><strong>增量式排课算法</strong>：支持增量式排课，能在已有课表基础上进行局部调整，大大提高了排课系统的灵活性和实用性。</p>
+</li>
+<li>
+<p><strong>多目标优化框架</strong>：引入多目标优化框架处理排课过程中的多个优化目标，采用帕累托最优解集提供多种可选的平衡方案。</p>
+</li>
+</ol>
+<h2 id="6">6. 系统实现</h2>
+<h3 id="61">6.1 开发环境</h3>
+<p>系统开发环境配置如下：</p>
+<p><strong>开发工具</strong>：
+- 采用IntelliJ IDEA和Webstrom作为前后端开发IDE，配合Apifox测试API，通过Navicat管理数据库。</p>
+<p><strong>运行环境</strong>：
+- 服务器端采用CentOS系统和JDK 17运行环境，前端基于Node.js 18，数据库选用MySQL 8.0和Redis 7.0，使用Nginx作为Web服务器，内置Tomcat作为应用服务器。</p>
+<p><strong>开发规范</strong>：
+- 遵循阿里巴巴Java开发手册和Airbnb JavaScript风格指南，基于Git进行版本管理，使用Swagger生成API文档，通过SpringBoot Test进行单元测试，采用Jenkins实现持续集成。</p>
+<h3 id="62">6.2 前端实现</h3>
+<h4 id="621">6.2.1 技术栈详情</h4>
+<p>前端基于React 18构建，界面设计采用Daisy UI组件库提供美观易用的UI元素，搭配Tailwind CSS实现高效的样式开发和响应式设计，这种简洁而强大的技术组合使得系统界面既美观现代又易于维护和扩展。</p>
+<h4 id="622">6.2.2 主要实现模块</h4>
+<ol>
+<li>
+<p><strong>课表展示模块</strong>：基于自定义的日历组件实现多视图课表展示，采用现代化拖拽交互调整课程时间和地点，提供直观的课程安排可视化效果。</p>
+</li>
+<li>
+<p><strong>排课控制模块</strong>：设计直观的排课参数配置界面，实现实时进度监控，通过WebSocket推送排课结果，提供全面的排课过程可视化体验。</p>
+</li>
+<li>
+<p><strong>数据可视化模块</strong>：利用Daisy UI内置的统计图表组件呈现各类数据分析结果，支持多种可视化展示方式，便于用户理解和分析排课数据，提供丰富的数据导出功能满足不同场景需求。</p>
+</li>
+<li>
+<p><strong>用户界面与交互</strong>：实现响应式布局适配各种设备，根据角色动态调整界面元素和权限控制，提供统一的视觉风格和流畅的操作体验，确保系统易用性。</p>
+</li>
+</ol>
+<h4 id="623">6.2.3 性能优化</h4>
+<p>前端性能优化采用了多方面策略，通过精细的组件化开发实现功能复用与代码解耦，将界面拆分为细粒度、高内聚的独立组件，便于维护和按需加载。同时基于路由的代码分割减少初始加载体积，利用Tailwind CSS的原子化CSS特性减少样式冗余并提高渲染效率，合理组织组件结构避免不必要的重渲染，实施API请求缓存和批量数据获取策略降低网络负载，同时优化Daisy UI组件的使用方式提升交互响应速度，这些优化措施共同确保了系统在各种设备上的稳定表现和流畅操作体验。</p>
+<h3 id="63">6.3 后端实现</h3>
+<h4 id="631">6.3.1 技术栈详情</h4>
+<p>后端采用Spring Boot框架作为基础开发平台，使用MyBatis-Plus简化数据库操作并提高开发效率，通过Spring Security实现完善的认证授权体系，集成Redis提供高性能缓存服务，这四种核心技术的组合构建了一个安全可靠、响应迅速的服务端架构，满足了系统高并发和大数据量的处理需求。</p>
+<h4 id="632">6.3.2 主要实现模块</h4>
+<ol>
+<li>
+<p><strong>核心业务模块</strong>：实现基础数据管理、排课策略配置、智能排课执行、课表管理以及数据分析等核心业务功能，为整个系统提供基础服务支持。</p>
+</li>
+<li>
+<p><strong>技术支持模块</strong>：提供权限认证、缓存管理、异步任务处理、日志监控和文件导出等技术支持，确保系统高效稳定运行。</p>
+</li>
+<li>
+<p><strong>算法实现模块</strong>：包含遗传算法引擎、约束处理引擎和冲突检测与解决引擎，为智能排课提供算法支撑。</p>
+</li>
+</ol>
+<h4 id="633-api">6.3.3 API设计</h4>
+<p>系统API遵循RESTful设计风格，涵盖用户认证、基础数据管理、排课流程控制、课表操作和数据分析等多个方面，通过统一的接口规范和清晰的资源划分，实现了前后端高效协作。所有接口均经过Swagger自动文档化，不仅方便开发人员理解和调试，也为前端集成提供了便捷参考，大大提高了开发效率和系统可维护性。</p>
+<h4 id="634">6.3.4 性能优化</h4>
+<p>系统通过多方面优化措施确保高性能运行，包括精心设计索引结构和SQL语句优化数据库访问效率，采用Redis实现多级缓存策略有效减轻数据库压力，并通过线程池管理并发任务、分布式锁控制并发修改和乐观锁防止数据覆盖等机制提升系统并发处理能力，这些优化手段相互配合，共同保障了系统在大规模数据处理和高并发访问场景下的稳定性能表现。</p>
+<h3 id="64">6.4 数据库实现</h3>
+<h4 id="641">6.4.1 数据库设计优化</h4>
+<ol>
+<li>
+<p><strong>表结构优化</strong>：遵循第三范式减少数据冗余，建立合理的外键关系，并选用适当的字段类型和长度确保存储效率。</p>
+</li>
+<li>
+<p><strong>索引设计</strong>：为常用查询条件创建精准索引，使用复合索引优化多条件查询，同时避免过度索引影响写入性能。</p>
+</li>
+<li>
+<p><strong>分区策略</strong>：对历史数据按学期进行分区，显著提高大数据量环境下的查询效率和维护性能。</p>
+</li>
+</ol>
+<h4 id="642-sql">6.4.2 SQL优化</h4>
+<p>系统通过精细化的SQL语句优化策略提升数据库性能，包括只查询必要字段避免SELECT *带来的额外开销，优化JOIN操作减少笛卡尔积产生的计算负担，采用EXISTS代替IN提高子查询效率，同时合理控制事务范围与粒度，避免长事务影响系统并发能力，并实现事务补偿机制确保数据一致性，这些优化措施共同保障了系统在大规模数据处理场景下的高效、稳定运行。</p>
+<h2 id="7">7. 系统测试</h2>
+<h3 id="71">7.1 测试环境</h3>
+<p>系统测试在配置有8核CPU、16G内存、100G SSD的阿里云ECS服务器上进行，采用CentOS 8.4操作系统、MySQL 8.0数据库和Nginx Web服务器，并使用Selenium、Playwright、JMeter和OWASP ZAP等专业工具进行功能、接口、性能和安全测试，确保测试结果的准确性和全面性。</p>
+<h3 id="72">7.2 功能测试</h3>
+<h4 id="721">7.2.1 测试范围</h4>
+<p>功能测试全面覆盖系统各核心模块，包括用户权限管理、院系专业班级等基础数据维护、个性化排课策略配置、智能排课执行与调整、多视图课表查询与导出、冲突检测与自动解决，以及教室利用率和教师工作量等数据分析功能，确保系统各功能模块运行稳定、交互流畅且符合业务需求。</p>
+<h4 id="722">7.2.2 测试方法</h4>
+<p>系统测试采用由点到面、逐步深入的测试策略，先通过SpringBoot Test和Selenium对后端服务层方法和前端组件进行单元测试，然后开展API接口、组件集成和数据流等集成测试，最后执行包括端到端功能验证、用户界面操作及多种浏览器和设备兼容性在内的系统测试，这种层层递进的测试方法确保了系统各组件既能独立正常工作，又能协同配合无缝运行。</p>
+<h4 id="723">7.2.3 测试结果</h4>
+<p>功能测试共执行547个测试用例，取得97.8%的高通过率，发现并修复了26个缺陷，实现了100%的重要功能覆盖，主要问题集中在特殊场景下的冲突处理和数据一致性维护方面，所有发现的问题均已修复并通过回归测试验证，充分证明了系统功能的完整性和稳定性。</p>
+<h3 id="73">7.3 性能测试</h3>
+<h4 id="731">7.3.1 测试指标</h4>
+<p>系统性能测试主要关注响应时间、并发用户数、吞吐量、资源利用率和系统稳定性等关键指标，全面评估系统在各种负载情况下的表现能力。</p>
+<h4 id="732">7.3.2 测试场景</h4>
+<ol>
+<li><strong>常规使用场景</strong>：模拟1000以下人同时访问系统执行课表查询、基础数据管理等常规操作。</li>
+<li><strong>高峰期场景</strong>：模拟100以上人集中访问执行课表查询、导出等高频操作评估系统在高负载下的表现。</li>
+<li><strong>排课算法性能测试</strong>：测试不同规模数据下排课算法性能及其资源占用情况。</li>
+</ol>
+<h4 id="733">7.3.3 测试结果</h4>
+<p>系统性能测试表现优异，常规操作响应时间小于1秒，中等规模排课耗时小于10分钟，支持200+并发用户，系统可稳定运行72小时以上，各项关键指标均优于预期目标。</p>
+<h3 id="74">7.4 安全测试</h3>
+<h4 id="741">7.4.1 测试内容</h4>
+<p>安全测试全面覆盖了系统的身份验证与授权机制、数据传输安全性、输入验证逻辑、敏感数据保护措施、会话管理实现，以及防御SQL注入、XSS和CSRF等常见Web安全威胁的能力，确保系统在多维度安全防护方面达到教育行业信息系统安全标准。</p>
+<h4 id="742">7.4.2 测试方法</h4>
+<ol>
+<li><strong>静态安全代码审查</strong>：通过SonarQube等工具进行代码安全扫描并由专业安全工程师手动审查关键安全点。</li>
+<li><strong>动态安全测试</strong>：使用OWASP ZAP进行自动化漏洞扫描并针对关键功能执行手动渗透测试验证。</li>
+</ol>
+<h4 id="743">7.4.3 测试结果</h4>
+<p>安全测试发现并修复了12处安全问题，主要包括输入验证不足、敏感信息泄露、权限控制缺陷、XSS漏洞和会话管理问题，所有问题均已完成修复并通过重新测试验证，系统整体安全性评估良好，满足教育行业信息系统安全要求。</p>
+<h2 id="8">8. 系统部署</h2>
+<h3 id="81">8.1 部署架构</h3>
+<p>系统采用分层部署架构，包括以下几个层次：</p>
+<ol>
+<li><strong>负载均衡层</strong>：使用Nginx实现负载均衡、配置SSL证书加密传输并进行静态资源缓存与压缩。</li>
+<li><strong>应用服务层</strong>：基于Docker容器化部署微服务架构的Web应用服务器集群，支持水平扩展。</li>
+<li><strong>数据存储层</strong>：采用MySQL主从架构存储核心数据，集成Redis集群提供高性能缓存，并配置独立文件存储服务。</li>
+<li><strong>监控与日志层</strong>：通过ELK stack实现日志收集分析，结合Prometheus和Grafana监控系统运行状态。</li>
+</ol>
+<p>系统架构设计充分考虑了高可用性和可扩展性，关键组件均采用集群方式部署，避免单点故障。</p>
+<h3 id="82">8.2 部署流程</h3>
+<p>系统部署采用渐进式实施策略，从底层基础设施到应用层逐步搭建。首先进行服务器硬件配置与基础软件环境搭建，完成网络安全与访问控制设置。随后部署MySQL主从架构并执行初始化脚本，建立数据存储基础。接着安装Redis缓存、RabbitMQ消息队列和Nginx负载均衡器等核心中间件，为应用运行提供必要支持。在中间件就绪后，部署后端微服务集群与前端静态资源，配置API网关实现统一访问入口。最后搭建ELK日志平台和Prometheus监控系统，建立完整的系统监控告警体系。每个阶段均执行相应验证测试，确保部署质量，最终通过全面的功能、性能和可靠性测试验证整体系统可用性。</p>
+<h3 id="83">8.3 运维说明</h3>
+<p>系统运维工作涵盖日常监控告警与问题排查、定期数据备份、性能分析与优化、数据库索引维护、缓存策略调整、安全漏洞扫描、系统补丁更新、权限审计、水平扩展方案实施、版本升级与数据迁移以及故障应急处理等多个方面，并提供详细的操作文档支持运维人员高效完成各项维护工作。</p>
+<h2 id="9">9. 项目亮点与创新</h2>
+<h3 id="91">9.1 技术创新</h3>
+<ol>
+<li>
+<p><strong>改进的遗传算法框架</strong>：开发了适应教育领域排课场景的自适应遗传算法框架，创新性地引入多级约束处理机制，显著提升了排课速度。</p>
+</li>
+<li>
+<p><strong>微服务架构与云原生设计</strong>：采用微服务架构将系统功能解耦为独立服务，基于容器技术实现云原生部署，支持系统弹性扩展。</p>
+</li>
+<li>
+<p><strong>实时数据处理与推送</strong>：基于WebSocket实现排课结果实时推送，采用响应式编程模型处理数据流，实现排课过程的可视化监控。</p>
+</li>
+<li>
+<p><strong>前端交互创新</strong>：实现基于拖拽的直观课表编辑体验，开发自适应布局的多维度课表展示，使用高级图表技术实现教学数据可视化。</p>
+</li>
+</ol>
+<h3 id="92">9.2 功能亮点</h3>
+<ol>
+<li>
+<p><strong>智能冲突解决</strong>：实时检测教师、教室和班级等多维度冲突，提供可视化展示和智能推荐解决方案，支持一键应用快速消除排课冲突。</p>
+</li>
+<li>
+<p><strong>个性化排课策略</strong>：支持基于权重的多维度排课规则定制，实现教师个人偏好与教学需求的智能平衡，确保排课结果满足各方需求。</p>
+</li>
+<li>
+<p><strong>多维度数据分析</strong>：提供教学资源利用率、教师工作量平衡度和课程时间分布合理性等多角度分析，支持交叉分析与教学决策优化。</p>
+</li>
+<li>
+<p><strong>智能调课功能</strong>：自动生成节假日调课方案，分析临时变更的最小影响范围，并支持调课通知的自动推送，大幅简化调课流程。</p>
+</li>
+</ol>
+<h3 id="93">9.3 性能优势</h3>
+<ol>
+<li>
+<p><strong>高效的排课算法</strong>：中等规模（1000门课程）排课时间控制在10分钟以内，通过增量式排课和算法优化使内存占用降低40%，CPU使用率降低35%。</p>
+</li>
+<li>
+<p><strong>良好的系统性能</strong>：普通操作响应时间小于1秒，复杂查询响应时间小于3秒，同时支持200+并发用户访问，系统资源占用合理无内存泄漏。</p>
+</li>
+<li>
+<p><strong>可扩展性设计</strong>：系统架构支持水平扩展，数据库设计优化支持大数据量处理，算法框架可扩展并支持新约束条件的动态添加。</p>
+</li>
+</ol>
+<h2 id="10">10. 项目总结</h2>
+<h3 id="101">10.1 开发过程回顾</h3>
+<p>本项目从需求分析到系统实现，历时约4个月，主要经历以下几个阶段：</p>
+<ol>
+<li>
+<p><strong>需求分析阶段</strong>（3周）：深入调研高校排课业务流程，分析用户需求与痛点，明确系统功能范围与技术要求。</p>
+</li>
+<li>
+<p><strong>系统设计阶段</strong>（4周）：制定系统总体架构，设计数据库结构，开发并验证核心排课算法原型的可行性。</p>
+</li>
+<li>
+<p><strong>开发实现阶段</strong>（10周）：前后端并行开发，实现并优化核心排课算法，完成各功能模块的集成与联调测试。</p>
+</li>
+<li>
+<p><strong>测试验收阶段</strong>（3周）：全面开展功能测试并修复问题，进行性能测试与优化，同时完成安全测试与系统加固。</p>
+</li>
+</ol>
+<p>项目采用敏捷开发方法，以两周为一个迭代周期，不断优化产品功能和用户体验。团队成员紧密协作，通过每日站会、代码评审等方式保证开发质量和进度。</p>
+<h3 id="102">10.2 技术难点与解决方案</h3>
+<p>在项目开发过程中，我们遇到了以下几个主要技术难点及其解决方案：</p>
+<ol>
+<li>
+<p><strong>排课算法性能瓶颈</strong>：通过优化染色体编码方式减少冲突检测复杂度，引入并行计算框架提高计算效率，实现增量式排课避免全量重新计算，解决了大规模数据下的性能下降问题。</p>
+</li>
+<li>
+<p><strong>复杂约束条件处理</strong>：开发多级约束处理机制区分硬约束和软约束，采用动态权重调整策略自适应优化解的质量，实现冲突可视化辅助用户理解和调整，成功平衡了多种相互影响的约束条件。</p>
+</li>
+<li>
+<p><strong>大数据量下的系统性能</strong>：优化数据库索引设计提高查询效率，实现多级缓存策略减少数据库访问，使用数据分区技术提高大表查询性能，有效解决了大量课程数据下的性能下降问题。</p>
+</li>
+<li>
+<p><strong>前端交互体验优化</strong>：实现拖拽式操作界面简化课表调整，开发智能提示系统辅助用户决策，优化前端性能确保大数据量下的流畅体验，使复杂的排课操作变得直观易用。</p>
+</li>
+</ol>
+<h3 id="103">10.3 未来展望</h3>
+<p>智课方舟系统在当前版本已实现了智能排课的核心功能，但仍有进一步发展和完善的空间：</p>
+<ol>
+<li>
+<p><strong>算法优化方向</strong>：通过深度学习技术从历史排课经验中学习最佳策略，开发更高效的冲突解决算法，研究多目标优化技术平衡各种排课目标，并引入大模型提高自动排课合理性。</p>
+</li>
+<li>
+<p><strong>功能扩展方向</strong>：整合选课系统实现选课-排课一体化解决方案，增加教学质量评估模块提供排课质量反馈，并开发移动端应用提供更便捷的访问方式。</p>
+</li>
+<li>
+<p><strong>技术升级方向</strong>：探索区块链技术在教学资源分配中的应用，引入知识图谱技术构建教学资源关联网络，采用边缘计算技术提供更低延迟的服务体验。</p>
+</li>
+<li>
+<p><strong>商业化发展方向</strong>：开发SaaS服务模式降低系统部署和维护成本，设计行业特定解决方案满足不同类型院校需求，构建开放平台生态支持第三方应用集成。</p>
+</li>
+</ol>
+<p>我们相信，随着人工智能和云计算技术的不断发展，智慧排课系统将变得更加智能、高效，为高校教学管理带来更大的价值。</p>
+<h2 id="11_1">11. 附录</h2>
+<h3 id="111">11.1 团队分工</h3>
+<p>项目团队由5名成员组成，各职责区分如下：</p>
+<ol>
+<li>
+<p><strong>曾昶雯</strong>：作为项目负责人，曾昶雯负责整个项目的规划与执行，参与前后端核心功能开发，同时专注于核心排课算法的设计与优化。在前端负责核心业务组件开发，在后端专注智能排课功能的实现，确保系统的整体性能达到预期目标。</p>
+</li>
+<li>
+<p><strong>杨娜</strong>：作为前端开发工程师，杨娜负责系统UI设计和前端界面开发，专注于提供流畅的用户体验和美观的界面设计，同时负责与后端的接口对接工作。</p>
+</li>
+<li>
+<p><strong>张林浦</strong>：作为后端开发工程师，张林浦负责具体的后端编程任务，并编写接口文档，以确保前后端的高效对接。</p>
+</li>
+<li>
+<p><strong>杨梓豪</strong>：作为后端开发工程师，杨梓豪专注于系统性能优化和测试，负责系统的压力测试和性能调优，同时参与核心功能模块的开发工作。</p>
+</li>
+<li>
+<p><strong>侯方圆</strong>：作为后端开发工程师，侯方圆专注于系统后端功能的开发与实现，负责构建稳定、高效的服务逻辑与数据处理流程，确保各类接口的正常运行和系统的业务逻辑准确执行。</p>
+</li>
+</ol>
+<p>团队成员通过敏捷开发方法进行协作，定期进行代码评审和知识分享，保证项目质量和团队技术能力的提升。</p>
+<h3 id="112">11.2 参考文献</h3>
+<ol>
+<li>王建东, 周涛, 陈萍. 基于遗传算法的大学排课系统研究与实现[J]. 计算机应用研究, 2019, 36(10): 3087-3090.</li>
+<li>刘洋, 张鑫, 李明. 改进遗传算法在高校智能排课中的应用[J]. 计算机工程与应用, 2020, 56(23): 232-238.</li>
+<li>张志强, 王志勇, 李敏. 基于多目标优化的课程安排问题研究综述[J]. 计算机学报, 2018, 41(9): 2007-2023.</li>
+<li>Carter M W, Laporte G. Recent developments in practical course timetabling[C]//International Conference on the Practice and Theory of Automated Timetabling. Springer, Berlin, Heidelberg, 1997: 3-19.</li>
+<li>Pillay N. A survey of school timetabling research[J]. Annals of Operations Research, 2014, 218(1): 261-293.</li>
+<li>Babaei H, Karimpour J, Hadidi A. A survey of approaches for university course timetabling problem[J]. Computers &amp; Industrial Engineering, 2015, 86: 43-59.</li>
+<li>马克华, 李霞, 张晓东. 基于Spring Boot的微服务架构设计与实现[J]. 计算机工程, 2020, 46(2): 35-41.</li>
+<li>李旭, 陈华, 王斌. React技术在前端开发中的应用研究[J]. 软件导刊, 2019, 18(12): 197-200.</li>
+</ol>
+<h3 id="113">11.3 专业术语表</h3>
+<ol>
+<li><strong>排课系统（Course Scheduling System）</strong>：负责安排教学活动的时间、地点和教师的信息系统。</li>
+<li><strong>遗传算法（Genetic Algorithm, GA）</strong>：一种模拟自然选择和遗传机制的优化算法，常用于解决复杂的组合优化问题。</li>
+<li><strong>硬约束（Hard Constraint）</strong>：必须满足的排课条件，如教师、教室和班级不能同时安排两门课程。</li>
+<li><strong>软约束（Soft Constraint）</strong>：尽量满足但可以违反的排课条件，如教师的时间偏好、连排要求等。</li>
+<li><strong>适应度函数（Fitness Function）</strong>：在遗传算法中用于评价个体（解决方案）优劣程度的函数。</li>
+<li><strong>冲突检测（Conflict Detection）</strong>：检查排课方案中是否存在资源冲突的过程。</li>
+<li><strong>响应式设计（Responsive Design）</strong>：能够自适应不同设备屏幕大小的界面设计方法。</li>
+<li><strong>微服务架构（Microservice Architecture）</strong>：将应用程序构建为一组小型服务的架构风格。</li>
+<li><strong>RESTful API</strong>：遵循REST原则的应用程序接口设计风格。</li>
+<li><strong>前后端分离（Front-end and Back-end Separation）</strong>：将前端界面和后端逻辑分开开发和部署的架构模式。</li>
+<li><strong>多目标优化（Multi-objective Optimization）</strong>：同时优化多个目标函数的优化问题。</li>
+<li><strong>容器化（Containerization）</strong>：使用容器技术封装应用及其依赖的软件部署方式。</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../algorithm/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 算法文档">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                算法文档
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../manuscript/" class="md-footer__link md-footer__link--next" aria-label="下一页: 视频文稿">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                视频文稿
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022-2025 锋叶技术团队 All Righjs Reserved. 版权所有
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["search", "search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.footer", "navigation.sections", "toc.follow", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../assets/js/extra.js"></script>
+      
+        <script src="../../assets/js/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

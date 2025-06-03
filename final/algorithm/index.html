@@ -1,0 +1,1651 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://bamboo-bookkeeping.doc.x-lf.cn/final/algorithm/" rel="canonical"/>
+<link href="../project_overview/" rel="prev"/>
+<link href="../project_detailed/" rel="next"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.14" name="generator"/>
+<title>算法文档 - 智课方舟</title>
+<link href="../../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="https://unpkg.com/katex@0/dist/katex.min.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          跳转至
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="页眉" class="md-header__inner md-grid">
+<a aria-label="智课方舟" class="md-header__button md-logo" data-md-component="logo" href="../.." title="智课方舟">
+<img alt="logo" src="../../../assets/images/favicon.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            智课方舟
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              算法文档
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="切换亮色模式" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="切换亮色模式">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+</label>
+<input aria-label="切换暗色模式" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="blue" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="切换暗色模式">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="依照系统进行模式切换" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="blue-grey" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="依照系统进行模式切换">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="搜索" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="搜索" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="查找" class="md-search__options">
+<a aria-label="分享" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="分享">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+</a>
+<button aria-label="清空当前内容" class="md-search__icon md-icon" tabindex="-1" title="清空当前内容" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/class-scheduling-system/develop-document" title="前往仓库">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    bamboo-services/develop-document
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="导航栏" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="智课方舟" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="智课方舟">
+<img alt="logo" src="../../../assets/images/favicon.png"/>
+</a>
+    智课方舟
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/class-scheduling-system/develop-document" title="前往仓库">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    bamboo-services/develop-document
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    欢迎
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information/">
+<span class="md-ellipsis">
+    开发信息
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../competition/">
+<span class="md-ellipsis">
+    赛题信息
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../requirements_specification/">
+<span class="md-ellipsis">
+    需求说明书
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+<span class="md-ellipsis">
+    设计
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            设计
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+<span class="md-ellipsis">
+    概要设计
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_1">
+<span class="md-nav__icon md-icon"></span>
+            概要设计
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/database/">
+<span class="md-ellipsis">
+    数据库设计
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/technical_architecture/">
+<span class="md-ellipsis">
+    技术架构设计
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+<span class="md-ellipsis">
+    详细设计
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+            详细设计
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/authorization/">
+<span class="md-ellipsis">
+    授权模块设计
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/auto_scheduling/">
+<span class="md-ellipsis">
+    自动排课设计
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/ai_suggestion/">
+<span class="md-ellipsis">
+    AI 建议设计
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/teacher/">
+<span class="md-ellipsis">
+    教师设计
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/student/">
+<span class="md-ellipsis">
+    学生设计
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/user_register/">
+<span class="md-ellipsis">
+    教师（学生）与用户关系设计
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+<span class="md-ellipsis">
+    开发
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            开发
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../develop/sql_prepare/">
+<span class="md-ellipsis">
+    关系型数据库准备
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../develop/nosql_prepare/">
+<span class="md-ellipsis">
+    非关系型数据库准备
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../develop/project_prepare/">
+<span class="md-ellipsis">
+    项目准备
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+<span class="md-ellipsis">
+    项目总结
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            项目总结
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../project_overview/">
+<span class="md-ellipsis">
+    概要文档
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    算法文档
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    算法文档
+    
+  </span>
+</a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1">
+<span class="md-ellipsis">
+      1. 算法概述
+    </span>
+</a>
+<nav aria-label="1. 算法概述" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11">
+<span class="md-ellipsis">
+      1.1 算法介绍
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12">
+<span class="md-ellipsis">
+      1.2 算法简要逻辑
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2">
+<span class="md-ellipsis">
+      2. 核心组件与数据结构
+    </span>
+</a>
+<nav aria-label="2. 核心组件与数据结构" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21">
+<span class="md-ellipsis">
+      2.1 主要数据模型
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#22">
+<span class="md-ellipsis">
+      2.2 关键工具类
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#23">
+<span class="md-ellipsis">
+      2.3 算法接口
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3">
+<span class="md-ellipsis">
+      3. 算法流程
+    </span>
+</a>
+<nav aria-label="3. 算法流程" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#31-schedulelessonsdatapreparationthread">
+<span class="md-ellipsis">
+      3.1 数据准备阶段 (ScheduleLessonsDataPreparationThread)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#32-automaticclassschedulingthread">
+<span class="md-ellipsis">
+      3.2 遗传算法执行 (AutomaticClassSchedulingThread)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4">
+<span class="md-ellipsis">
+      4. 关键算法实现
+    </span>
+</a>
+<nav aria-label="4. 关键算法实现" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#41-generateinitialpopulationservice">
+<span class="md-ellipsis">
+      4.1 种群初始化(GenerateInitialPopulationService)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42">
+<span class="md-ellipsis">
+      4.2 适应度评估规则
+    </span>
+</a>
+<nav aria-label="4.2 适应度评估规则" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#421">
+<span class="md-ellipsis">
+      4.2.1 冲突检测
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#422">
+<span class="md-ellipsis">
+      4.2.2 时间偏好
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#423">
+<span class="md-ellipsis">
+      4.2.3 课程连续性
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#424">
+<span class="md-ellipsis">
+      4.2.4 教室优化
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#425">
+<span class="md-ellipsis">
+      4.2.5 教师偏好
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#426">
+<span class="md-ellipsis">
+      4.2.6 适应度计算公式
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#43-iterateservice">
+<span class="md-ellipsis">
+      4.3 选择、交叉与变异 (IterateService)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#44-basegeneticschedulinglogic">
+<span class="md-ellipsis">
+      4.4 冲突检测 (BaseGeneticSchedulingLogic)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5">
+<span class="md-ellipsis">
+      5. 算法优化策略
+    </span>
+</a>
+<nav aria-label="5. 算法优化策略" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51">
+<span class="md-ellipsis">
+      5.1 三种排课策略
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#52">
+<span class="md-ellipsis">
+      5.2 多约束条件优化
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6">
+<span class="md-ellipsis">
+      6. 遗传算法总体数学公式
+    </span>
+</a>
+<nav aria-label="6. 遗传算法总体数学公式" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#61">
+<span class="md-ellipsis">
+      6.1 初始化种群
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#62">
+<span class="md-ellipsis">
+      6.2 适应度函数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#63">
+<span class="md-ellipsis">
+      6.3 选择操作
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#64">
+<span class="md-ellipsis">
+      6.4交叉操作数学表示
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#65">
+<span class="md-ellipsis">
+      6.5对子代个体进行变异操作：
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#66">
+<span class="md-ellipsis">
+      6.6 新一代种群构建
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#67">
+<span class="md-ellipsis">
+      6.7 收敛判断
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#68">
+<span class="md-ellipsis">
+      6.8 遗传算法流程
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7">
+<span class="md-ellipsis">
+      7.算法输出结果
+    </span>
+</a>
+<nav aria-label="7.算法输出结果" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#71">
+<span class="md-ellipsis">
+      7.1 排课结果
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#72">
+<span class="md-ellipsis">
+      7.2 数据持久化
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8">
+<span class="md-ellipsis">
+      8. 算法优势与特点
+    </span>
+</a>
+<nav aria-label="8. 算法优势与特点" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81">
+<span class="md-ellipsis">
+      8.1 特点
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82">
+<span class="md-ellipsis">
+      8.2 与原始普通遗传算法的比较优势
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9">
+<span class="md-ellipsis">
+      9.算法总结
+    </span>
+</a>
+<nav aria-label="9.算法总结" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#91">
+<span class="md-ellipsis">
+      9.1 算法目标
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#92">
+<span class="md-ellipsis">
+      9.2 算法核心思路
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#93">
+<span class="md-ellipsis">
+      9.3关键设计点
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../project_detailed/">
+<span class="md-ellipsis">
+    详细文档
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../manuscript/">
+<span class="md-ellipsis">
+    视频文稿
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1">
+<span class="md-ellipsis">
+      1. 算法概述
+    </span>
+</a>
+<nav aria-label="1. 算法概述" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11">
+<span class="md-ellipsis">
+      1.1 算法介绍
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12">
+<span class="md-ellipsis">
+      1.2 算法简要逻辑
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2">
+<span class="md-ellipsis">
+      2. 核心组件与数据结构
+    </span>
+</a>
+<nav aria-label="2. 核心组件与数据结构" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21">
+<span class="md-ellipsis">
+      2.1 主要数据模型
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#22">
+<span class="md-ellipsis">
+      2.2 关键工具类
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#23">
+<span class="md-ellipsis">
+      2.3 算法接口
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3">
+<span class="md-ellipsis">
+      3. 算法流程
+    </span>
+</a>
+<nav aria-label="3. 算法流程" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#31-schedulelessonsdatapreparationthread">
+<span class="md-ellipsis">
+      3.1 数据准备阶段 (ScheduleLessonsDataPreparationThread)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#32-automaticclassschedulingthread">
+<span class="md-ellipsis">
+      3.2 遗传算法执行 (AutomaticClassSchedulingThread)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4">
+<span class="md-ellipsis">
+      4. 关键算法实现
+    </span>
+</a>
+<nav aria-label="4. 关键算法实现" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#41-generateinitialpopulationservice">
+<span class="md-ellipsis">
+      4.1 种群初始化(GenerateInitialPopulationService)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42">
+<span class="md-ellipsis">
+      4.2 适应度评估规则
+    </span>
+</a>
+<nav aria-label="4.2 适应度评估规则" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#421">
+<span class="md-ellipsis">
+      4.2.1 冲突检测
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#422">
+<span class="md-ellipsis">
+      4.2.2 时间偏好
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#423">
+<span class="md-ellipsis">
+      4.2.3 课程连续性
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#424">
+<span class="md-ellipsis">
+      4.2.4 教室优化
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#425">
+<span class="md-ellipsis">
+      4.2.5 教师偏好
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#426">
+<span class="md-ellipsis">
+      4.2.6 适应度计算公式
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#43-iterateservice">
+<span class="md-ellipsis">
+      4.3 选择、交叉与变异 (IterateService)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#44-basegeneticschedulinglogic">
+<span class="md-ellipsis">
+      4.4 冲突检测 (BaseGeneticSchedulingLogic)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5">
+<span class="md-ellipsis">
+      5. 算法优化策略
+    </span>
+</a>
+<nav aria-label="5. 算法优化策略" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51">
+<span class="md-ellipsis">
+      5.1 三种排课策略
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#52">
+<span class="md-ellipsis">
+      5.2 多约束条件优化
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6">
+<span class="md-ellipsis">
+      6. 遗传算法总体数学公式
+    </span>
+</a>
+<nav aria-label="6. 遗传算法总体数学公式" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#61">
+<span class="md-ellipsis">
+      6.1 初始化种群
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#62">
+<span class="md-ellipsis">
+      6.2 适应度函数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#63">
+<span class="md-ellipsis">
+      6.3 选择操作
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#64">
+<span class="md-ellipsis">
+      6.4交叉操作数学表示
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#65">
+<span class="md-ellipsis">
+      6.5对子代个体进行变异操作：
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#66">
+<span class="md-ellipsis">
+      6.6 新一代种群构建
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#67">
+<span class="md-ellipsis">
+      6.7 收敛判断
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#68">
+<span class="md-ellipsis">
+      6.8 遗传算法流程
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7">
+<span class="md-ellipsis">
+      7.算法输出结果
+    </span>
+</a>
+<nav aria-label="7.算法输出结果" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#71">
+<span class="md-ellipsis">
+      7.1 排课结果
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#72">
+<span class="md-ellipsis">
+      7.2 数据持久化
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8">
+<span class="md-ellipsis">
+      8. 算法优势与特点
+    </span>
+</a>
+<nav aria-label="8. 算法优势与特点" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#81">
+<span class="md-ellipsis">
+      8.1 特点
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#82">
+<span class="md-ellipsis">
+      8.2 与原始普通遗传算法的比较优势
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9">
+<span class="md-ellipsis">
+      9.算法总结
+    </span>
+</a>
+<nav aria-label="9.算法总结" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#91">
+<span class="md-ellipsis">
+      9.1 算法目标
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#92">
+<span class="md-ellipsis">
+      9.2 算法核心思路
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#93">
+<span class="md-ellipsis">
+      9.3关键设计点
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="_1">核心算法文档</h1>
+<h2 id="1">1. 算法概述</h2>
+<h3 id="11">1.1 算法介绍</h3>
+<p>本系统使用遗传算法（Genetic Algorithm, GA）实现智能排课功能。遗传算法是一种模拟自然选择和遗传机制的优化算法，通过不断迭代、进化，寻找最优解或较优解。在排课系统中，遗传算法能够有效处理多约束条件下的复杂排课问题，生成满足各类约束的课程表。</p>
+<h3 id="12">1.2 算法简要逻辑</h3>
+<ol>
+<li>​<strong>数据输入阶段</strong>​<ul>
+<li>前端提交排课约束条件（课程、教师、教室、时间等）</li>
+<li>后端接收并预处理数据，生成排课问题域</li>
+</ul>
+</li>
+<li>​<strong>种群初始化</strong>​<ul>
+<li>随机生成初始种群（多个候选课表）</li>
+<li>每个个体表示一种排课方案（教室、教师、时间槽的合法组合）</li>
+</ul>
+</li>
+<li>​<strong>适应度评估</strong>​<ul>
+<li>对每个个体进行约束检测和评分</li>
+<li>计算冲突数（如教师时间冲突、教室占用冲突等）</li>
+<li>根据冲突情况计算适应度值（冲突越少，适应度越高）</li>
+</ul>
+</li>
+<li>​<strong>迭代优化阶段</strong>​<ul>
+<li>选择（Selection）</li>
+<li>采用轮盘赌选择法，优先保留高适应度个体</li>
+<li>适应度越高的个体被选中的概率越大</li>
+<li>交叉（Crossover）</li>
+<li>从父代中选择两个个体，交换部分课程安排</li>
+<li>生成新的子代个体，保留优质基因</li>
+<li>变异（Mutation）</li>
+<li>随机调整部分课程的时间或教室分配</li>
+<li>引入多样性，避免早熟收敛</li>
+</ul>
+</li>
+<li>​<strong>结果输出阶段</strong>​<ul>
+<li>记录迭代过程中的最优解</li>
+<li>最终输出冲突最少的排课方案（适应度最高的）</li>
+<li>保存无法避免的冲突</li>
+</ul>
+</li>
+</ol>
+<h2 id="2">2. 核心组件与数据结构</h2>
+<h3 id="21">2.1 主要数据模型</h3>
+<table>
+<thead>
+<tr>
+<th>数据模型名称</th>
+<th>数据模型简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AutomaticClassSchedulingBaseDTO</td>
+<td>表示后端准备数据结束后生成的算法所需所有数据</td>
+</tr>
+<tr>
+<td>ScheduleDTO</td>
+<td>表示一个完整课程表的解决方案，包含课程安排列表和适应度值。</td>
+</tr>
+<tr>
+<td>CourseScheduleDTO</td>
+<td>单个课程的排课方案，包含时间槽与课程安排项的映射。</td>
+</tr>
+<tr>
+<td>CourseScheduleItemDTO</td>
+<td>具体的课程安排项，包含课程、教师、教室、班级等信息。</td>
+</tr>
+<tr>
+<td>TimeSlotDTO</td>
+<td>时间槽，表示第几周、星期几、第几节课。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22">2.2 关键工具类</h3>
+<table>
+<thead>
+<tr>
+<th>工具类名称</th>
+<th>工具类简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ClassroomSelectionUtil</td>
+<td>教室选择工具类，负责根据课程要求和学生人数选择合适的教室。</td>
+</tr>
+<tr>
+<td>ScheduleFitnessCalculator</td>
+<td>适应度计算工具类，评估课程表的质量。</td>
+</tr>
+<tr>
+<td>TimeSlotGeneratorUtil</td>
+<td>时间槽生成工具类，生成符合要求的时间安排。</td>
+</tr>
+<tr>
+<td>CheckConflicts</td>
+<td>冲突检测工具类，检查各种资源冲突。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23">2.3 算法接口</h3>
+<table>
+<thead>
+<tr>
+<th>接口名称</th>
+<th>接口简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GenerateInitialPopulationService</td>
+<td>初始化种群，根据要求初始化符合要求的种群</td>
+</tr>
+<tr>
+<td>EvaluatePopulationService</td>
+<td>评估种群，根据要求计算种群的适应度</td>
+</tr>
+<tr>
+<td>IterateService</td>
+<td>进化迭代，根据要求对各个种群进行选择，交叉与变异</td>
+</tr>
+<tr>
+<td>BaseGeneticSchedulingLogic</td>
+<td>基础算法，包括冲突检测，根据排课结果创建返回值保存到数据</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3">3. 算法流程</h2>
+<h3 id="31-schedulelessonsdatapreparationthread">3.1 数据准备阶段 (ScheduleLessonsDataPreparationThread)</h3>
+<div class="mermaid">flowchart TD
+    A[开始] --&gt; B[获取基础数据]
+    B --&gt; C{存在混合课程?}
+    C --&gt;|是| D[拆分混合课程]
+    C --&gt;|否| E[设置课程优先级]
+    D --&gt; E
+    E --&gt; F[准备教室数据]
+    F --&gt; G[获取数据库内冲突课表]
+    G --&gt; H[组装算法参数]
+    H --&gt; I[选择策略]
+    I --&gt;|优化模式| J[设置精细参数]
+    I --&gt;|平衡模式| K[设置默认参数]
+    I --&gt;|快速模式| L[设置简化参数]
+    J --&gt; M[传输到遗传算法线程]
+    K --&gt; M
+    L --&gt; M
+    M --&gt; N[结束]
+
+    %% 全局字体缩小设置
+    classDef default font-size:12px
+
+    %% 样式定义
+    style A fill:#4CAF50,stroke:#388E3C,color:white
+    style N fill:#4CAF50,stroke:#388E3C,color:white
+    style B fill:#2196F3,stroke:#1976D2,color:white
+    style D fill:#2196F3,stroke:#1976D2,color:white
+    style E fill:#2196F3,stroke:#1976D2,color:white
+    style F fill:#2196F3,stroke:#1976D2,color:white
+    style G fill:#2196F3,stroke:#1976D2,color:white
+    style H fill:#FF9800,stroke:#F57C00,color:white
+    style I fill:#FF9800,stroke:#F57C00,color:white
+    style J fill:#9C27B0,stroke:#7B1FA2,color:white
+    style K fill:#9C27B0,stroke:#7B1FA2,color:white
+    style L fill:#9C27B0,stroke:#7B1FA2,color:white
+    style M fill:#607D8B,stroke:#455A64,color:white
+
+    %% 特别设置决策节点C的样式
+    style C fill:#FFF8E1,stroke:#FFC107,color:#333,font-weight:bold
+</div>
+<h3 id="32-automaticclassschedulingthread">3.2 遗传算法执行 (AutomaticClassSchedulingThread)</h3>
+<div class="mermaid">flowchart TD
+    A[初始化种群] --&gt; B[适应度评估]
+    B --&gt; C{满足终止条件?}
+    C --&gt;|否| D1[轮盘赌选择]
+    D1 --&gt; D2[精英保留]
+    D2 --&gt; E1[单点交叉]
+    E1 --&gt; E2[优化交叉]
+    E2 --&gt; F1[时间槽变异]
+    F1 --&gt; F2[教室资源变异]
+    F2 --&gt; B
+    C --&gt;|是| G[获取最优解]
+    G --&gt; H[冲突检测]
+    H --&gt; I[保存排课数据]
+    H --&gt; J[保存冲突数据]
+
+    %% 样式定义
+    style A fill:#2196F3,stroke:#1976D2,color:white
+    style B fill:#2196F3,stroke:#1976D2,color:white
+    style D1 fill:#4CAF50,stroke:#388E3C,color:white
+    style D2 fill:#4CAF50,stroke:#388E3C,color:white,font-style:italic
+    style E1 fill:#FF9800,stroke:#F57C00,color:white
+    style E2 fill:#FF9800,stroke:#F57C00,color:white,font-style:italic
+    style F1 fill:#9C27B0,stroke:#7B1FA2,color:white
+    style F2 fill:#9C27B0,stroke:#7B1FA2,color:white,font-style:italic
+    style G fill:#607D8B,stroke:#455A64,color:white
+    style H fill:#607D8B,stroke:#455A64,color:white
+    style I fill:#4CAF50,stroke:#388E3C,color:white
+    style J fill:#FF9800,stroke:#F57C00,color:white
+    %% 决策节点样式
+    style C fill:#FFF8E1,stroke:#FFC107,color:#333,font-weight:bold
+    %% 全局设置
+    classDef default font-size:12px
+</div>
+<h2 id="4">4. 关键算法实现</h2>
+<h3 id="41-generateinitialpopulationservice">4.1 种群初始化(GenerateInitialPopulationService)</h3>
+<p>通过基础数据，对需要排课的每一门课进行初次随机分配：</p>
+<ul>
+<li>优先对每一门课进行分班处理，由于可能存在一门课的人数过多，若未限定行政班，算法将会根据人数进行分配，最小为30人一个教学班，最大为所选教室最大容量人数分配教学班，如果超过最大容量人数则进行随机分配班级，始终保持教学班人数为30-最大人数之间；若限定行政班级，算法将会优先按照专业一样的班级进行分班，专业一样的班级优先为一个教学班，若人数少于30或超过最大人数则进行二次分班，始终保持由行政把你组成教学班人数为30-最大人数人之间。</li>
+<li>(ClassroomSelectionUtil) 为每一个教学班级随机分配一个符合要求的教室，符合人数大小（教室容量大于教学班人数）的，符合课程安排的教室，若基础数据为没有符合的教室，则会优先分配一个人数尽可能符合的教室，若还不存在，则随机分配一个人数尽可能符合的教室，保证每一个教学班都有教室上课。</li>
+<li>为每一个教学班级随机分配一个老师，根据基础数据获取符合有教学资格的老师（必定存在），通过随机数的分配，随机选择一个老师为这一个教学班级进行上课。</li>
+<li>以上数据会被存到CourseScheduleItemDTO中作为这门课的基础信息。</li>
+<li>(TimeSlotGeneratorUtil)为每一教学班级分配上课时间槽，根据基础数据中周学时来为课程分配时间槽，根据周学时来自动分配每周上课时间槽，在周学时为奇数的情况下，系统会自动生成单双周补课时间槽（由用户定义单双周），在此基础上生成时间槽列表，存放到CourseScheduleDTO组成一门课程安排。</li>
+</ul>
+<h3 id="42">4.2 适应度评估规则</h3>
+<h4 id="421">4.2.1 冲突检测</h4>
+<ul>
+<li>​<strong>教师冲突检测</strong>​: 同一教师同一时间分配多门课程：每处-100分</li>
+<li>​<strong>教室冲突检测</strong>​: 同一教室同一时间分配多门课程：每处-100分</li>
+<li>​<strong>班级冲突检测</strong>​: 同一班级同一时间分配多门课程：每处-100分</li>
+</ul>
+<h4 id="422">4.2.2 时间偏好</h4>
+<ul>
+<li>​<strong>偏好时间段</strong>​<br/>
+  符合教师/班级偏好：每节+10分</li>
+<li>​<strong>非偏好时间段</strong>​<br/>
+  ▸ 非期望晚课：每节-5分<br/>
+  ▸ 非期望早课：每节-3分</li>
+</ul>
+<h4 id="423">4.2.3 课程连续性</h4>
+<ul>
+<li>​<strong>连续课程奖励</strong>​<br/>
+  同班级连续2+节相同课程：(节数-1)×5分</li>
+<li>​<strong>课程间隔要求</strong>​<br/>
+  理论/实践课间隔不足1天：每处-5分</li>
+</ul>
+<h4 id="424">4.2.4 教室优化</h4>
+<ul>
+<li>​<strong>容量匹配</strong>​<br/>
+  ▸ 70-90%利用率：+5分<br/>
+  ▸ &gt;90%利用率：+10分<br/>
+  ▸ &lt;70%利用率：-5分</li>
+<li>​<strong>类型匹配</strong>​<br/>
+  符合课程需求：+10分<br/>
+  不符合需求：-5分</li>
+</ul>
+<h4 id="425">4.2.5 教师偏好</h4>
+<ul>
+<li>​<strong>时间段偏好</strong>​<br/>
+  ▸ 非常期望：+10分/节<br/>
+  ▸ 较期望：+5分/节<br/>
+  ▸ 可接受：0分<br/>
+  ▸ 尽量避免：-5分/节<br/>
+  ▸ 最不期望：-10分/节</li>
+</ul>
+<h4 id="426">4.2.6 适应度计算公式</h4>
+<pre><code>适应度 = 基准分(1000)
+      - (教师冲突数 × 100)
+      - (教室冲突数 × 100)
+      - (班级冲突数 × 100)
+      + (偏好时间段匹配数 × 10)
+      - (非偏好晚课数 × 5)
+      - (非偏好早课数 × 3)
+      + (连续课程组数 × (课程数-1) × 5)
+      - (不合理间隔数 × 5)
+      + Σ教室容量加分（按利用率区间）
+      + Σ教室类型匹配分（+10或-5）
+      + Σ教师偏好分（按偏好级别）
+</code></pre>
+<h3 id="43-iterateservice">4.3 选择、交叉与变异 (IterateService)</h3>
+<ul>
+<li><strong>选择操作</strong>：使用轮盘赌选择法，适应度高的个体有更大概率被选中。</li>
+<li><strong>交叉操作</strong>：将两个父代解决方案的部分课程安排进行交换，生成新的解决方案。</li>
+<li><strong>变异操作</strong>：随机改变部分课程的时间槽或教室分配，以增加种群多样性。</li>
+</ul>
+<h3 id="44-basegeneticschedulinglogic">4.4 冲突检测 (BaseGeneticSchedulingLogic)</h3>
+<ul>
+<li><strong>时间冲突检测</strong>：检查相同时间槽是否有资源冲突。</li>
+<li><strong>教师冲突</strong>：同一教师不能同时出现在不同地点授课。</li>
+<li><strong>教室冲突</strong>：同一教室不能同时安排多门课程。</li>
+<li><strong>班级冲突</strong>：同一班级不能同时上不同课程。</li>
+</ul>
+<h2 id="5">5. 算法优化策略</h2>
+<h3 id="51">5.1 三种排课策略</h3>
+<p>系统提供三种排课策略，通过调整算法参数实现不同的优化目标：</p>
+<ul>
+<li><strong>优化策略</strong>：种群大小200，最大迭代次数1000，交叉率0.8，变异率0.1。</li>
+<li>注重排课质量，生成最优解，但耗时较长。</li>
+<li><strong>平衡策略</strong>：种群大小100，最大迭代次数500，交叉率0.7，变异率0.2。</li>
+<li>在时间和质量之间取得平衡。</li>
+<li><strong>快速策略</strong>：种群大小50，最大迭代次数200，交叉率0.6，变异率0.3。</li>
+<li>快速生成可接受的解决方案，适合临时排课。</li>
+</ul>
+<h3 id="52">5.2 多约束条件优化</h3>
+<p>系统支持多种约束条件的组合优化：</p>
+<ul>
+<li><strong>教师偏好考虑</strong>：尊重教师的时间偏好设置。</li>
+<li><strong>教室优化</strong>：合理分配教室资源，提高利用率。</li>
+<li><strong>学生冲突避免</strong>：避免同一班级在同一时间段有多门课程。</li>
+<li><strong>连续课程优先</strong>：优先安排连续课程，减少碎片时间。</li>
+<li><strong>专业教室匹配</strong>：根据课程类型分配对应的专业教室。</li>
+<li><strong>时间槽单双周分配</strong>: 根据奇数周学时自动分配单双周补课。</li>
+</ul>
+<h2 id="6">6. 遗传算法总体数学公式</h2>
+<h3 id="61">6.1 初始化种群</h3>
+<p>设种群规模为 N，每个个体表示一个排课方案，用染色体 Xi​ 表示：</p>
+<div class="arithmatex">\[
+P^{(0)} = \{ \mathbf{X}_1^{(0)}, \mathbf{X}_2^{(0)}, \dots, \mathbf{X}_N^{(0)} \}
+\]</div>
+<p>其中：</p>
+<ul>
+<li><span class="arithmatex">\(\mathbf{X}_i^{(0)}\)</span>：第 <span class="arithmatex">\(i\)</span> 个初始个体，表示一个完整课表方案</li>
+<li><span class="arithmatex">\(P^{(0)}\)</span>：初始种群集合</li>
+</ul>
+<h3 id="62">6.2 适应度函数</h3>
+<div class="arithmatex">\[
+f_i^{(t)} = \text{Fitness}(\mathbf{X}_i^{(t)})
+\]</div>
+<p>其中：</p>
+<ul>
+<li><span class="arithmatex">\(\mathbf{X}_i^{(t)}\)</span>：第 <span class="arithmatex">\(t\)</span> 代第 <span class="arithmatex">\(i\)</span> 个个体（染色体）</li>
+<li><span class="arithmatex">\(f_i^{(t)}\)</span>：对应的适应度函数值</li>
+<li><span class="arithmatex">\(\text{Fitness}(\cdot)\)</span>：适应度评估函数</li>
+</ul>
+<h3 id="63">6.3 选择操作</h3>
+<p>采用轮盘赌策略选择个体时，每个个体 <span class="arithmatex">\(\mathbf{X}_i^{(t)}\)</span> 的被选概率为：</p>
+<div class="arithmatex">\[
+\text{Prob}(\mathbf{X}_i^{(t)}) = \frac{f_i^{(t)}}{\sum_{j=1}^N f_j^{(t)}}
+\]</div>
+<p>其中：</p>
+<ul>
+<li><span class="arithmatex">\(f_i^{(t)}\)</span>：第 <span class="arithmatex">\(i\)</span> 个个体的适应度值</li>
+<li><span class="arithmatex">\(N\)</span>：种群规模</li>
+<li>分母为当代所有个体适应度之和</li>
+<li>选出的交配池表示为：</li>
+</ul>
+<div class="arithmatex">\[
+M^{(t)} = \{ \mathbf{X}_{s_1}^{(t)}, \mathbf{X}_{s_2}^{(t)}, \dots, \mathbf{X}_{s_K}^{(t)} \}
+\]</div>
+<p>其中 <span class="arithmatex">\(s_1, \dots, s_K\)</span> 是通过轮盘赌选出的个体索引（允许重复选择）</p>
+<h3 id="64">6.4交叉操作数学表示</h3>
+<p>从交配池 <span class="arithmatex">\(M^{(t)}\)</span> 中成对选择个体进行交叉：</p>
+<div class="arithmatex">\[
+(\mathbf{X}_i^{(t)}, \mathbf{X}_j^{(t)}) \xrightarrow{\text{crossover}} (\mathbf{X}_i^{(t+1)}, \mathbf{X}_j^{(t+1)})
+\]</div>
+<p>其中：</p>
+<ul>
+<li>交叉概率 <span class="arithmatex">\(p_c \in (0,1]\)</span> 控制操作执行频率</li>
+<li>交叉策略可采用：</li>
+<li>​<strong>单点交叉</strong>​：随机选择切点 <span class="arithmatex">\(k\)</span>，交换切点后基因段
+    $$
+    \begin{aligned}
+    \mathbf{X}<em>i^{(t+1)} &amp;= [g</em>{i1}, \dots, g_{ik}, g_{j(k+1)}, \dots, g_{jm}] \
+    \mathbf{X}<em>j^{(t+1)} &amp;= [g</em>{j1}, \dots, g_{jk}, g_{i(k+1)}, \dots, g_{im}]
+    \end{aligned}
+    $$</li>
+<li>​<strong>排课专用交叉</strong>​（示例）：<ul>
+<li>按课程类型交换时间块</li>
+<li>保留教师-课程匹配关系交换教室分配 4. 交叉操作（Crossover）</li>
+</ul>
+</li>
+</ul>
+<h3 id="65">6.5对子代个体进行变异操作：</h3>
+<div class="arithmatex">\[
+\mathbf{X}_k^{(t+1)} \xrightarrow{\text{mutation}} \mathbf{X}_k^{\prime(t+1)}
+\]</div>
+<p>其中：</p>
+<ul>
+<li>变异概率 <span class="arithmatex">\(p_m \in [0,1)\)</span> 控制变异强度</li>
+<li>常用变异策略：</li>
+<li>​<strong>时间微调</strong>​：随机调整课程时间槽 <span class="arithmatex">\(\tau \sim \mathcal{U}\{1, T\}\)</span>
+    $$ g_{kl}^{\prime} = (r_k, t_k \pm \Delta t, c_k) $$</li>
+<li>​<strong>教室替换</strong>​：在合规教室集合中随机选择
+    $$ g<em>{kl}^{\prime} = (r_k, t_k, c_k^{\prime}), \quad c_k^{\prime} \in \mathcal{C}</em>{\text{valid}} $$</li>
+</ul>
+<h3 id="66">6.6 新一代种群构建</h3>
+<div class="arithmatex">\[
+P^{(t+1)} = \text{SelectBest}\left(P^{(t)} \cup \text{Offspring}^{(t+1)}\right)
+\]</div>
+<p>其中：</p>
+<ul>
+<li><span class="arithmatex">\(\text{Offspring}^{(t+1)}\)</span> 表示通过交叉和变异产生的新个体集合</li>
+<li><span class="arithmatex">\(\text{SelectBest}(\cdot)\)</span> 为选择函数，通常保留：</li>
+<li>前代最优个体（精英保留）</li>
+<li>适应度最高的 <span class="arithmatex">\(N\)</span> 个个体（<span class="arithmatex">\(N\)</span> 为种群规模）</li>
+</ul>
+<h3 id="67">6.7 收敛判断</h3>
+<div class="arithmatex">\[
+\text{Terminate if: } t \geq T_{\text{max}} \text{ or } f^* \geq f_{\text{threshold}}
+\]</div>
+<p>其中：</p>
+<ul>
+<li><span class="arithmatex">\(T_{\text{max}}\)</span>：最大迭代次数（如 500 代）</li>
+<li><span class="arithmatex">\(f^* = \max \{ f(\mathbf{X}) | \mathbf{X} \in P^{(t)} \}\)</span>：当前种群最优适应度</li>
+<li><span class="arithmatex">\(f_{\text{threshold}}\)</span>：预设目标适应度阈值（如 950 分）</li>
+</ul>
+<h3 id="68">6.8 遗传算法流程</h3>
+<ol>
+<li>​<strong>初始化</strong>​：</li>
+<li>生成初始种群 <span class="arithmatex">\(P^{(0)} = \{ \mathbf{X}_1^{(0)}, \dots, \mathbf{X}_N^{(0)} \}\)</span></li>
+<li>设置参数：<span class="arithmatex">\(p_c\)</span>, <span class="arithmatex">\(p_m\)</span>, <span class="arithmatex">\(T_{\text{max}}\)</span>, <span class="arithmatex">\(f_{\text{threshold}}\)</span></li>
+<li>
+<p>​<strong>迭代优化</strong>​（<span class="arithmatex">\(t = 0\)</span> to <span class="arithmatex">\(T_{\text{max}}\)</span>）：</p>
+</li>
+<li>
+<p>​<strong>适应度评估</strong>​：
+     $$ f_i^{(t)} = \text{Fitness}(\mathbf{X}_i^{(t)}), \quad \forall \mathbf{X}_i \in P^{(t)} $$</p>
+</li>
+<li>​<strong>选择</strong>​：
+     $$ M^{(t)} = \text{Select}(P^{(t)}, f^{(t)}) $$</li>
+<li>​<strong>交叉</strong>​（概率 <span class="arithmatex">\(p_c\)</span>）：
+     $$ \forall (\mathbf{X}_i, \mathbf{X}_j) \in M^{(t)}, \quad (\mathbf{X}_i, \mathbf{X}_j) \xrightarrow{\text{crossover}} (\mathbf{X}_i', \mathbf{X}_j') $$</li>
+<li>​<strong>变异</strong>​（概率 <span class="arithmatex">\(p_m\)</span>）：
+     $$ \forall \mathbf{X}_k \in \text{Offspring}, \quad \mathbf{X}_k \xrightarrow{\text{mutation}} \mathbf{X}_k' $$</li>
+<li>
+<p>​<strong>新一代种群</strong>​：
+     $$ P^{(t+1)} = \text{NextGeneration}(P^{(t)}, \text{Offspring}^{(t+1)}) $$</p>
+</li>
+<li>
+<p>​<strong>终止条件</strong>​（满足任一即停止）：</p>
+</li>
+<li>
+<p><span class="arithmatex">\(t \geq T_{\text{max}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(f^* \geq f_{\text{threshold}}\)</span></p>
+</li>
+<li>
+<p>​<strong>输出</strong>​：
+   $$
+   \mathbf{X}^* = \underset{\mathbf{X} \in P^{(t)}}{\text{argmax}} f(\mathbf{X})
+   $$</p>
+</li>
+</ol>
+<h2 id="7">7.算法输出结果</h2>
+<h3 id="71">7.1 排课结果</h3>
+<ul>
+<li><strong>课程安排列表</strong>：详细的课程安排信息，包括课程、教师、教室、时间等。</li>
+<li><strong>冲突信息</strong>：如果存在无法避免的冲突，会记录冲突详情。</li>
+<li><strong>资源利用率</strong>：包括教室利用率、教师工作量分布、时间槽使用率等。</li>
+</ul>
+<h3 id="72">7.2 数据持久化</h3>
+<ul>
+<li>将排课结果保存到数据库中的课程安排表和教学班表。</li>
+<li>记录排课过程中的冲突情况，便于管理员后续处理。</li>
+<li>临时保存排课结果到Redis缓存，支持查看，便于用户查看结果</li>
+</ul>
+<h2 id="8">8. 算法优势与特点</h2>
+<h3 id="81">8.1 特点</h3>
+<ol>
+<li><strong>多约束条件支持</strong>：同时处理教师、教室、班级等多种资源约束。</li>
+<li><strong>灵活的策略选择</strong>：提供多种排课策略，满足不同场景需求。</li>
+<li><strong>教室资源优化</strong>：根据课程类型和学生人数智能分配教室。</li>
+<li><strong>冲突处理机制</strong>：识别并记录无法避免的冲突，辅助人工决策。</li>
+<li><strong>时间偏好支持</strong>：考虑教师和管理员的时间偏好设置。</li>
+<li><strong>连续课程优化</strong>：优先安排连续课程，提高教学效果和资源利用率。</li>
+<li><strong>单双周排课</strong>：支持单周、双周排课的特殊情况处理。</li>
+</ol>
+<h3 id="82">8.2 与原始普通遗传算法的比较优势</h3>
+<p>在本系统中，所采用的改进型遗传算法在标准遗传算法的基础上进行了多方面优化，主要包括适应度函数设计、选择算子优化以及局部搜索策略的引入。与原始普通遗传算法相比，改进算法在收敛速度、排课质量以及冲突控制等方面表现更为优异。</p>
+<p>首先，原始遗传算法通常仅以课表冲突数作为适应度评估标准，容易陷入局部最优，无法充分考虑教师偏好、课程分布均衡等软约束。而本系统引入了多目标适应度函数，将软硬约束权重综合考虑，使算法的搜索方向更具引导性。</p>
+<p>其次，在选择和变异操作方面，传统算法常采用轮盘赌选择和简单单点变异，易造成种群早熟或多样性丧失。本系统则引入了精英保留策略与局部微调操作，在保持解多样性的同时加快了收敛速度。</p>
+<p>实验结果表明，在相同规模的数据集下，改进遗传算法在平均适应度、收敛代数和冲突数量等指标上均优于原始算法，尤其是在复杂约束条件下表现更为稳定可靠。</p>
+<h2 id="9">9.算法总结</h2>
+<h3 id="91">9.1 算法目标</h3>
+<p>本实验旨在构建一个智能排课系统，能够在多个现实约束条件下（如教师时间、教室容量、班级冲突等）生成尽可能优化的课程安排方案。系统采用<strong>遗传算法（Genetic Algorithm, GA）</strong>，通过模拟生物进化过程，逐代优化课程表，提高整体排课质量和资源利用率。</p>
+<h3 id="92">9.2 算法核心思路</h3>
+<p>遗传算法将每一个课程表视为一个"染色体"，通过初始化、适应度评估、选择、交叉和变异等步骤进行进化，逐步逼近最优解。其核心流程包括：</p>
+<ol>
+<li><strong>种群初始化</strong>：根据课程、教师、班级、教室等信息，随机生成一组初始可行排课方案。</li>
+<li><strong>适应度评估</strong>：通过冲突检测、时间偏好、连续性、教室匹配等规则，打分每个方案的排课质量。</li>
+<li><strong>选择操作</strong>：采用轮盘赌算法，保留适应度高的个体，增强优良基因的继承。</li>
+<li><strong>交叉操作</strong>：在高适应度个体之间交换部分课程安排，提升局部结构的优化。</li>
+<li><strong>变异操作</strong>：随机变动部分课程的时间或教室，增加种群多样性，防止陷入局部最优。</li>
+<li><strong>终止判断</strong>：当达到设定迭代次数或个体适应度趋于稳定时，终止进化过程，输出最优方案。</li>
+</ol>
+<h3 id="93">9.3关键设计点</h3>
+<ul>
+<li><strong>多因素评分机制</strong>：适应度不仅考虑资源冲突，还结合教师偏好、教室利用率、时间段合理性等进行加权评分。</li>
+<li><strong>三种策略模式</strong>：根据不同排课场景设定优化参数（快速/平衡/精细），提升实际应用灵活性。</li>
+<li><strong>时间槽与单双周处理</strong>：自动支持不等周学时课程，通过单双周时间槽生成器合理安排课程。</li>
+<li><strong>课程自动分班</strong>：支持混合课按行政班或人数自动分班，适应不同教学组织方式。</li>
+</ul>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  回到页面顶部
+</button>
+</main>
+<footer class="md-footer">
+<nav aria-label="页脚" class="md-footer__inner md-grid">
+<a aria-label="上一页: 概要文档" class="md-footer__link md-footer__link--prev" href="../project_overview/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                上一页
+              </span>
+<div class="md-ellipsis">
+                概要文档
+              </div>
+</div>
+</a>
+<a aria-label="下一页: 详细文档" class="md-footer__link md-footer__link--next" href="../project_detailed/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                下一页
+              </span>
+<div class="md-ellipsis">
+                详细文档
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2022-2025 锋叶技术团队 All Righjs Reserved. 版权所有
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<div class="md-progress" data-md-component="progress" role="progressbar"></div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["search", "search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.footer", "navigation.sections", "toc.follow", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+<script src="../../assets/js/extra.js"></script>
+<script src="../../assets/js/katex.js"></script>
+<script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+<script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
